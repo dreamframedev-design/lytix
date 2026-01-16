@@ -96,7 +96,8 @@ export default function PipelinePage() {
   };
 
   return (
-    <div className="pt-24">
+    <div className="bg-lytix-light">
+    <div className="pt-24 relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[60vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -266,27 +267,28 @@ export default function PipelinePage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-lytix-teal to-lytix-teal-dark text-white relative overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-10" />
-        <div className="absolute right-0 top-0 w-96 h-96 bg-lytix-cyan/20 rounded-full blur-3xl" />
-        <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Interested in Partnership Opportunities?
-          </h2>
-          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            We are actively seeking partners for co-development and outlicensing across key markets.
-          </p>
-          <Link href="/partnerships">
-            <Button size="lg" className="bg-white text-lytix-teal-dark hover:bg-lytix-ice shadow-lg">
-              Explore Partnerships
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
-      </section>
     </div>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-20 bg-gradient-to-r from-lytix-teal to-lytix-teal-dark text-white relative overflow-hidden">
+      <div className="absolute inset-0 tech-grid opacity-10" />
+      <div className="absolute right-0 top-0 w-96 h-96 bg-lytix-cyan/20 rounded-full blur-3xl" />
+      <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Interested in Partnership Opportunities?
+        </h2>
+        <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+          We are actively seeking partners for co-development and outlicensing across key markets.
+        </p>
+        <Link href="/partnerships">
+          <Button size="lg" className="bg-white text-lytix-teal-dark hover:bg-lytix-ice shadow-lg">
+            Explore Partnerships
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </Link>
+      </div>
+    </section>
+  </div>
   );
 }
 

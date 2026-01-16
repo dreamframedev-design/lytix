@@ -82,7 +82,8 @@ export default function NewsPage() {
   const regularNews = newsItems.filter((item) => !item.featured);
 
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[60vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -215,25 +216,26 @@ export default function NewsPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-white border-y border-lytix-ice">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <Newspaper className="w-12 h-12 text-lytix-teal/30 mx-auto mb-4" />
-          <p className="text-lytix-navy/60 font-light mb-6">
-            For a complete archive of press releases, visit our investor relations portal.
-          </p>
-          <a
-            href="https://lytixbiopharma.com/news/press-releases.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-lytix-teal/10 text-lytix-teal rounded-xl font-bold text-sm hover:bg-lytix-teal hover:text-white transition-all"
-          >
-            Visit Press Release Archive
-            <ExternalLink className="w-4 h-4" />
-          </a>
-        </div>
-      </section>
     </main>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-16 bg-white border-y border-lytix-ice">
+      <div className="container mx-auto px-4 lg:px-8 text-center">
+        <Newspaper className="w-12 h-12 text-lytix-teal/30 mx-auto mb-4" />
+        <p className="text-lytix-navy/60 font-light mb-6">
+          For a complete archive of press releases, visit our investor relations portal.
+        </p>
+        <a
+          href="https://lytixbiopharma.com/news/press-releases.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-lytix-teal/10 text-lytix-teal rounded-xl font-bold text-sm hover:bg-lytix-teal hover:text-white transition-all"
+        >
+          Visit Press Release Archive
+          <ExternalLink className="w-4 h-4" />
+        </a>
+      </div>
+    </section>
+  </div>
   );
 }

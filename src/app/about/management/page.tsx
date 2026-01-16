@@ -33,7 +33,8 @@ const managementTeam = [
 
 export default function ManagementPage() {
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[60vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -94,35 +95,36 @@ export default function ManagementPage() {
           </div>
         </div>
       </section>
+    </main>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-lytix-light">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-5xl mx-auto p-8 bg-white rounded-3xl border border-lytix-ice">
-            <div>
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-navy/40 mb-2 block">Explore More</span>
-              <h2 className="text-2xl font-bold text-lytix-navy mb-2">Explore Our Leadership</h2>
-              <p className="text-lytix-navy/60 font-light">Learn more about our Board of Directors and Clinical Advisory Board.</p>
-            </div>
-            <div className="flex gap-4 flex-wrap">
-              <Link 
-                href="/about/board"
-                className="px-6 py-3 bg-lytix-teal/10 text-lytix-teal rounded-xl font-bold text-sm hover:bg-lytix-teal hover:text-white transition-all flex items-center gap-2"
-              >
-                Board of Directors
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link 
-                href="/about/clinical-advisory"
-                className="px-6 py-3 bg-lytix-teal text-white rounded-xl font-bold text-sm hover:bg-lytix-teal-dark transition-all flex items-center gap-2"
-              >
-                Clinical Advisory
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-16 bg-lytix-light">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-5xl mx-auto p-8 bg-white rounded-3xl border border-lytix-ice">
+          <div>
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-navy/40 mb-2 block">Explore More</span>
+            <h2 className="text-2xl font-bold text-lytix-navy mb-2">Explore Our Leadership</h2>
+            <p className="text-lytix-navy/60 font-light">Learn more about our Board of Directors and Clinical Advisory Board.</p>
+          </div>
+          <div className="flex gap-4 flex-wrap">
+            <Link 
+              href="/about/board"
+              className="px-6 py-3 bg-lytix-teal/10 text-lytix-teal rounded-xl font-bold text-sm hover:bg-lytix-teal hover:text-white transition-all flex items-center gap-2"
+            >
+              Board of Directors
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link 
+              href="/about/clinical-advisory"
+              className="px-6 py-3 bg-lytix-teal text-white rounded-xl font-bold text-sm hover:bg-lytix-teal-dark transition-all flex items-center gap-2"
+            >
+              Clinical Advisory
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </div>
   );
 }

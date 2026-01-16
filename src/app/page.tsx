@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Full screen background image */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden z-[2]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -68,7 +68,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 1: Redefining Standard of Care */}
-      <section className="py-24 bg-white relative overflow-hidden group/section">
+      <section className="py-32 bg-white relative overflow-hidden group/section z-[2]">
         <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-lytix-ice/50 to-transparent" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -115,7 +115,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 2: Overcoming Immunosuppression */}
-      <section className="py-24 bg-lytix-light relative overflow-hidden">
+      <section className="py-32 bg-lytix-light relative overflow-hidden">
         <div className="absolute inset-0 molecular-pattern opacity-50" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -162,7 +162,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 3: Pipeline Teaser */}
-      <section className="py-24 bg-white relative">
+      <section className="pt-32 pb-12 bg-white relative z-[2]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-up stagger-1">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lytix-gold/10 text-lytix-navy text-sm font-medium border border-lytix-gold/30 hover:bg-lytix-gold/20 transition-colors">
@@ -175,98 +175,119 @@ export default function HomePage() {
             </h2>
           </div>
           
-          {/* Pipeline Preview Table */}
-          <div className="overflow-x-auto mb-12 animate-scale-up stagger-2">
-            <div className="min-w-[800px] bg-white rounded-2xl border-2 border-lytix-ice shadow-xl overflow-hidden hover:shadow-2xl hover:border-lytix-teal/30 transition-all duration-500">
-              {/* Header */}
-              <div className="grid grid-cols-7 gap-4 p-6 bg-lytix-navy text-white text-xs font-bold uppercase tracking-wider">
-                <div className="col-span-2">Asset</div>
-                <div className="text-center">Preclinical</div>
-                <div className="text-center">Phase I</div>
-                <div className="text-center">Phase II</div>
-                <div className="text-center">Phase III</div>
-                <div className="text-center">Partner</div>
-              </div>
-              
-              {/* Ruxotemitide Row */}
-              <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice hover:bg-lytix-light/50 transition-colors">
-                <div className="col-span-2">
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className="w-2.5 h-2.5 rounded-full bg-lytix-teal relative">
-                      <span className="absolute inset-0 rounded-full bg-lytix-teal animate-ping opacity-40" />
-                    </div>
-                    <p className="font-bold text-lytix-teal-dark">Ruxotemitide (LTX-315)</p>
+          {/* Pipeline Preview with Fade Effect */}
+          <div className="relative animate-scale-up stagger-2">
+            {/* Pipeline Table Container - clips content */}
+            <div className="overflow-hidden max-h-[320px]">
+              <div className="overflow-x-auto">
+                <div className="min-w-[800px] bg-white rounded-t-2xl border-2 border-b-0 border-lytix-ice shadow-xl overflow-hidden">
+                  {/* Header */}
+                  <div className="grid grid-cols-7 gap-4 p-6 bg-lytix-navy text-white text-xs font-bold uppercase tracking-wider">
+                    <div className="col-span-2">Asset</div>
+                    <div className="text-center">Preclinical</div>
+                    <div className="text-center">Phase I</div>
+                    <div className="text-center">Phase II</div>
+                    <div className="text-center">Phase III</div>
+                    <div className="text-center">Partner</div>
                   </div>
-                  <p className="text-sm text-lytix-navy/60 ml-4">Neoadjuvant resectable melanoma</p>
-                </div>
-                {/* Continuous progress bar ~69% (2.75/4) through Phase II */}
-                <div className="col-span-4 px-2">
-                  <div className="relative h-4 bg-lytix-ice rounded-full overflow-hidden">
-                    <div className="absolute inset-0 grid grid-cols-4 z-10 pointer-events-none">
-                      <span className="border-r-2 border-white" />
-                      <span className="border-r-2 border-white" />
-                      <span className="border-r-2 border-white" />
-                      <span />
+                  
+                  {/* Ruxotemitide - Pivotal Study Row */}
+                  <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice hover:bg-lytix-light/50 transition-colors">
+                    <div className="col-span-2">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="w-2.5 h-2.5 rounded-full bg-lytix-teal relative">
+                          <span className="absolute inset-0 rounded-full bg-lytix-teal animate-ping opacity-40" />
+                        </div>
+                        <p className="font-bold text-lytix-teal-dark">Ruxotemitide (LTX-315)</p>
+                      </div>
+                      <p className="text-sm text-lytix-navy/60 ml-4">Neoadjuvant resectable melanoma</p>
                     </div>
-                    <div className="pipeline-bar-fill absolute left-0 top-0 h-full w-[69%] bg-gradient-to-r from-lytix-teal via-lytix-teal to-lytix-cyan rounded-full overflow-hidden">
-                      <span className="pipeline-shine" />
+                    <div className="col-span-4 px-2">
+                      <div className="relative h-4 bg-lytix-ice rounded-full overflow-hidden">
+                        <div className="absolute inset-0 grid grid-cols-4 z-10 pointer-events-none">
+                          <span className="border-r-2 border-white" />
+                          <span className="border-r-2 border-white" />
+                          <span className="border-r-2 border-white" />
+                          <span />
+                        </div>
+                        <div className="pipeline-bar-fill absolute left-0 top-0 h-full w-[69%] bg-gradient-to-r from-lytix-teal via-lytix-teal to-lytix-cyan rounded-full overflow-hidden">
+                          <span className="pipeline-shine" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral font-semibold text-xs border border-lytix-coral/20">
-                    Seeking Partners
-                  </span>
-                </div>
-              </div>
-              
-              {/* LTX-401 Row */}
-              <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 hover:bg-lytix-light/50 transition-colors">
-                <div className="col-span-2">
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className="w-2.5 h-2.5 rounded-full bg-lytix-navy-deep relative">
-                      <span className="absolute inset-0 rounded-full bg-lytix-navy-deep animate-ping opacity-40" />
-                    </div>
-                    <p className="font-bold text-lytix-navy-deep">LTX-401</p>
-                  </div>
-                  <p className="text-sm text-lytix-navy/60 ml-4">Deep-seated solid tumors</p>
-                </div>
-                {/* Continuous progress bar ~21% (0.85/4) into Phase I */}
-                <div className="col-span-4 px-2">
-                  <div className="relative h-4 bg-lytix-ice rounded-full overflow-hidden">
-                    <div className="absolute inset-0 grid grid-cols-4 z-10 pointer-events-none">
-                      <span className="border-r-2 border-white" />
-                      <span className="border-r-2 border-white" />
-                      <span className="border-r-2 border-white" />
-                      <span />
-                    </div>
-                    <div className="pipeline-bar-fill absolute left-0 top-0 h-full w-[21%] bg-gradient-to-r from-lytix-teal to-lytix-cyan rounded-full overflow-hidden" style={{ animationDelay: '0.3s' }}>
-                      <span className="pipeline-shine" />
+                    <div className="text-center">
+                      <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral font-semibold text-xs border border-lytix-coral/20">
+                        Seeking Partners
+                      </span>
                     </div>
                   </div>
-                </div>
-                <div className="text-center">
-                  <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-gold/10 text-lytix-navy font-semibold text-xs border border-lytix-gold/30">
-                    Preparing Phase I
-                  </span>
+                  
+                  {/* LTX-401 Row */}
+                  <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice hover:bg-lytix-light/50 transition-colors">
+                    <div className="col-span-2">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="w-2.5 h-2.5 rounded-full bg-lytix-navy-deep relative">
+                          <span className="absolute inset-0 rounded-full bg-lytix-navy-deep animate-ping opacity-40" />
+                        </div>
+                        <p className="font-bold text-lytix-navy-deep">LTX-401</p>
+                      </div>
+                      <p className="text-sm text-lytix-navy/60 ml-4">Deep-seated solid tumors</p>
+                    </div>
+                    <div className="col-span-4 px-2">
+                      <div className="relative h-4 bg-lytix-ice rounded-full overflow-hidden">
+                        <div className="absolute inset-0 grid grid-cols-4 z-10 pointer-events-none">
+                          <span className="border-r-2 border-white" />
+                          <span className="border-r-2 border-white" />
+                          <span className="border-r-2 border-white" />
+                          <span />
+                        </div>
+                        <div className="pipeline-bar-fill absolute left-0 top-0 h-full w-[21%] bg-gradient-to-r from-lytix-teal to-lytix-cyan rounded-full overflow-hidden" style={{ animationDelay: '0.3s' }}>
+                          <span className="pipeline-shine" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-center">
+                      <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-gold/10 text-lytix-navy font-semibold text-xs border border-lytix-gold/30">
+                        Preparing Phase I
+                      </span>
+                    </div>
+                  </div>
+                  
+                  {/* Additional rows that will be hidden by gradient */}
+                  <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice">
+                    <div className="col-span-2">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="w-2.5 h-2.5 rounded-full bg-lytix-teal/50" />
+                        <p className="font-bold text-lytix-teal-dark/60">More Pipeline Assets...</p>
+                      </div>
+                    </div>
+                    <div className="col-span-4 px-2">
+                      <div className="h-4 bg-lytix-ice rounded-full" />
+                    </div>
+                    <div className="text-center" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="text-center">
-            <Link href="/pipeline">
-              <Button size="lg" className="btn-lytix-gradient text-white">
-                View Full Pipeline
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+            
+            {/* White Gradient Fade Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white to-transparent pointer-events-none" />
+            
+            {/* CTA Button positioned over the gradient */}
+            <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-2 z-10">
+              <Link href="/pipeline">
+                <Button size="lg" className="btn-lytix-gradient text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+                  View Full Pipeline
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Section 4: Clinical Trial Validation */}
-      <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
+      <section className="py-32 bg-navy-gradient text-white relative overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-10" />
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-lytix-teal/10 to-transparent" />
         
@@ -311,7 +332,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 5: Partnering Strategy */}
-      <section className="py-24 bg-white relative">
+      <section className="py-32 bg-white relative z-[2]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1 animate-slide-left stagger-2">
@@ -373,7 +394,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 6: Investor Relations / Press Releases */}
-      <section className="py-24 bg-lytix-light relative overflow-hidden">
+      <section className="py-32 bg-lytix-light relative overflow-hidden">
         <div className="absolute inset-0 molecular-pattern opacity-30" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-up stagger-1">

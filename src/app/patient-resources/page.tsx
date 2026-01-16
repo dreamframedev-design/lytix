@@ -4,7 +4,8 @@ import { ArrowRight, BookOpen, FileQuestion, Heart, Shield, Users, MessageCircle
 
 export default function PatientResourcesPage() {
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[70vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -105,76 +106,78 @@ export default function PatientResourcesPage() {
           </div>
         </div>
       </section>
+    </main>
 
-      {/* Support Values */}
-      <section className="py-24 bg-lytix-light relative">
-        <div className="absolute inset-0 molecular-pattern opacity-50" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 relative">
-              <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl shadow-lytix-teal/20">
-                <Image
-                  src="/images/doctor hero.webp"
-                  alt="Patient support"
-                  fill
-                  className="object-cover"
-                  quality={90}
-                />
-              </div>
+    {/* Support Values / Our Commitment - Outside main for ribbon visibility */}
+    <section className="py-24 bg-lytix-light relative">
+      <div className="absolute inset-0 molecular-pattern opacity-50" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="order-2 lg:order-1 relative">
+            <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl shadow-lytix-teal/20">
+              <Image
+                src="/images/doctor hero.webp"
+                alt="Patient support"
+                fill
+                className="object-cover"
+                quality={90}
+              />
             </div>
+          </div>
+          
+          <div className="order-1 lg:order-2">
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-4 block">Our Commitment</span>
+            <h2 className="text-4xl font-bold tracking-tight text-lytix-navy mb-6">
+              Patients at the Heart of Everything
+            </h2>
+            <p className="text-lg text-lytix-navy/60 font-light leading-relaxed mb-10">
+              At Lytix Biopharma, we understand that navigating cancer treatment can be overwhelming. 
+              We&apos;re here to provide clarity, support, and hope.
+            </p>
             
-            <div className="order-1 lg:order-2">
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-4 block">Our Commitment</span>
-              <h2 className="text-4xl font-bold tracking-tight text-lytix-navy mb-6">
-                Patients at the Heart of Everything
-              </h2>
-              <p className="text-lg text-lytix-navy/60 font-light leading-relaxed mb-10">
-                At Lytix Biopharma, we understand that navigating cancer treatment can be overwhelming. 
-                We&apos;re here to provide clarity, support, and hope.
-              </p>
+            <div className="space-y-5">
+              <div className="flex items-start gap-5 p-5 rounded-2xl bg-white hover-glow border border-lytix-ice">
+                <div className="w-12 h-12 rounded-xl bg-lytix-teal/10 flex items-center justify-center text-lytix-teal flex-shrink-0">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-lytix-navy mb-1">Patient Safety First</h4>
+                  <p className="text-sm text-lytix-navy/50 font-light">
+                    Rigorous safety monitoring in all our clinical programs.
+                  </p>
+                </div>
+              </div>
               
-              <div className="space-y-5">
-                <div className="flex items-start gap-5 p-5 rounded-2xl bg-white hover-glow border border-lytix-ice">
-                  <div className="w-12 h-12 rounded-xl bg-lytix-teal/10 flex items-center justify-center text-lytix-teal flex-shrink-0">
-                    <Shield className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lytix-navy mb-1">Patient Safety First</h4>
-                    <p className="text-sm text-lytix-navy/50 font-light">
-                      Rigorous safety monitoring in all our clinical programs.
-                    </p>
-                  </div>
+              <div className="flex items-start gap-5 p-5 rounded-2xl bg-white hover-glow border border-lytix-ice">
+                <div className="w-12 h-12 rounded-xl bg-lytix-coral/10 flex items-center justify-center text-lytix-coral flex-shrink-0">
+                  <Users className="h-6 w-6" />
                 </div>
-                
-                <div className="flex items-start gap-5 p-5 rounded-2xl bg-white hover-glow border border-lytix-ice">
-                  <div className="w-12 h-12 rounded-xl bg-lytix-coral/10 flex items-center justify-center text-lytix-coral flex-shrink-0">
-                    <Users className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lytix-navy mb-1">Dedicated Support</h4>
-                    <p className="text-sm text-lytix-navy/50 font-light">
-                      Our team is available to answer questions and provide guidance.
-                    </p>
-                  </div>
+                <div>
+                  <h4 className="font-bold text-lytix-navy mb-1">Dedicated Support</h4>
+                  <p className="text-sm text-lytix-navy/50 font-light">
+                    Our team is available to answer questions and provide guidance.
+                  </p>
                 </div>
-                
-                <div className="flex items-start gap-5 p-5 rounded-2xl bg-white hover-glow border border-lytix-ice">
-                  <div className="w-12 h-12 rounded-xl bg-lytix-gold/20 flex items-center justify-center text-lytix-gold flex-shrink-0">
-                    <Heart className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-lytix-navy mb-1">Compassionate Care</h4>
-                    <p className="text-sm text-lytix-navy/50 font-light">
-                      Treating each patient with dignity and understanding.
-                    </p>
-                  </div>
+              </div>
+              
+              <div className="flex items-start gap-5 p-5 rounded-2xl bg-white hover-glow border border-lytix-ice">
+                <div className="w-12 h-12 rounded-xl bg-lytix-gold/20 flex items-center justify-center text-lytix-gold flex-shrink-0">
+                  <Heart className="h-6 w-6" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-lytix-navy mb-1">Compassionate Care</h4>
+                  <p className="text-sm text-lytix-navy/50 font-light">
+                    Treating each patient with dignity and understanding.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <main className="relative z-[2]">
       {/* Coming Soon Notice */}
       <section className="py-16 bg-white border-y border-lytix-ice">
         <div className="container mx-auto px-4 lg:px-8">
@@ -191,40 +194,41 @@ export default function PatientResourcesPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-10" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
-        
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center">
-          <span className="inline-block px-4 py-1.5 bg-lytix-teal/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-teal/30">
-            We&apos;re Here to Help
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
-            Have questions? Reach out today.
-          </h2>
-          <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
-            Our team is ready to assist you with information about our therapies, clinical trials, or any other questions.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link 
-              href="/contact"
-              className="px-10 py-5 bg-lytix-teal hover:bg-lytix-cyan text-white hover:text-lytix-navy rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-teal/30 hover:scale-105 transition-all flex items-center gap-3"
-            >
-              Contact Us
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link 
-              href="/clinical-trials"
-              className="px-10 py-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest border border-white/20 hover:border-white/40 transition-all"
-            >
-              View Clinical Trials
-            </Link>
-          </div>
-        </div>
-      </section>
     </main>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
+      <div className="absolute inset-0 tech-grid opacity-10" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+        <span className="inline-block px-4 py-1.5 bg-lytix-teal/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-teal/30">
+          We&apos;re Here to Help
+        </span>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
+          Have questions? Reach out today.
+        </h2>
+        <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
+          Our team is ready to assist you with information about our therapies, clinical trials, or any other questions.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link 
+            href="/contact"
+            className="px-10 py-5 bg-lytix-teal hover:bg-lytix-cyan text-white hover:text-lytix-navy rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-teal/30 hover:scale-105 transition-all flex items-center gap-3"
+          >
+            Contact Us
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+          <Link 
+            href="/clinical-trials"
+            className="px-10 py-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest border border-white/20 hover:border-white/40 transition-all"
+          >
+            View Clinical Trials
+          </Link>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 }

@@ -46,7 +46,8 @@ const oncolyticAdvantages = [
 
 export default function SciencePage() {
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[70vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -112,37 +113,39 @@ export default function SciencePage() {
           </div>
         </div>
       </section>
+    </main>
 
-      {/* Section 2: Our Solution */}
-      <section className="py-24 bg-lytix-light relative">
-        <div className="absolute inset-0 tech-grid opacity-20" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Our Solution</span>
-            <h2 className="text-4xl font-bold tracking-tight mb-6 text-lytix-navy">
-              Our Oncolytic Molecule Therapies Address These Limitations
-            </h2>
-            <p className="text-lg text-lytix-navy/60 font-light">
-              Our therapies enhance the clinical impact of immune checkpoint inhibitors and work where others fail:
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {oncolyticAdvantages.map((item, index) => (
-              <div key={index} className="group glass-card p-1 rounded-[2rem] glow-border">
-                <div className="bg-white rounded-[1.7rem] p-8 h-full">
-                  <div className="w-14 h-14 rounded-2xl bg-lytix-teal/10 flex items-center justify-center mb-6 group-hover:bg-lytix-teal group-hover:text-white transition-all duration-300">
-                    <item.icon className="h-7 w-7 text-lytix-teal group-hover:text-white transition-colors" />
-                  </div>
-                  <h3 className="text-xl font-bold text-lytix-navy mb-3">{item.title}</h3>
-                  <p className="text-lytix-navy/60 font-light leading-relaxed">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+    {/* Section 2: Our Solution - Outside main for ribbon visibility */}
+    <section className="py-24 bg-lytix-light relative">
+      <div className="absolute inset-0 tech-grid opacity-20" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Our Solution</span>
+          <h2 className="text-4xl font-bold tracking-tight mb-6 text-lytix-navy">
+            Our Oncolytic Molecule Therapies Address These Limitations
+          </h2>
+          <p className="text-lg text-lytix-navy/60 font-light">
+            Our therapies enhance the clinical impact of immune checkpoint inhibitors and work where others fail:
+          </p>
         </div>
-      </section>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {oncolyticAdvantages.map((item, index) => (
+            <div key={index} className="group glass-card p-1 rounded-[2rem] glow-border">
+              <div className="bg-white rounded-[1.7rem] p-8 h-full">
+                <div className="w-14 h-14 rounded-2xl bg-lytix-teal/10 flex items-center justify-center mb-6 group-hover:bg-lytix-teal group-hover:text-white transition-all duration-300">
+                  <item.icon className="h-7 w-7 text-lytix-teal group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-xl font-bold text-lytix-navy mb-3">{item.title}</h3>
+                <p className="text-lytix-navy/60 font-light leading-relaxed">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
+    <main className="relative z-[2]">
       {/* Section 3: Two-Step Mode of Action */}
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-4 lg:px-8">
@@ -223,51 +226,53 @@ export default function SciencePage() {
           </div>
         </div>
       </section>
+    </main>
 
-      {/* Section 4: Publications */}
-      <section id="publications" className="py-24 bg-lytix-light relative">
-        <div className="absolute inset-0 molecular-pattern opacity-50" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-            <div>
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Research</span>
-              <h2 className="text-4xl font-bold tracking-tight text-lytix-navy">Publications</h2>
-              <p className="text-lg text-lytix-navy/60 font-light mt-2">
-                Peer-reviewed publications demonstrating the science behind our platform.
-              </p>
-            </div>
-            <FileText className="h-12 w-12 text-lytix-teal/30" />
+    {/* Section 4: Publications - Outside main for ribbon visibility */}
+    <section id="publications" className="py-24 bg-lytix-light relative">
+      <div className="absolute inset-0 molecular-pattern opacity-50" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Research</span>
+            <h2 className="text-4xl font-bold tracking-tight text-lytix-navy">Publications</h2>
+            <p className="text-lg text-lytix-navy/60 font-light mt-2">
+              Peer-reviewed publications demonstrating the science behind our platform.
+            </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="group glass-card p-1 rounded-[2rem] glow-border">
-                <div className="bg-white rounded-[1.7rem] p-6 h-full">
-                  <p className="text-sm text-lytix-teal-dark font-medium mb-2">Journal Name • 2024</p>
-                  <h4 className="font-bold text-lytix-navy mb-3 leading-tight group-hover:text-lytix-teal transition-colors">
-                    Publication Title {i}: Demonstrating the Efficacy of Oncolytic Peptides in Cancer Immunotherapy
-                  </h4>
-                  <p className="text-sm text-lytix-navy/50 font-light mb-4">
-                    Author A, Author B, Author C, et al.
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-lytix-teal-dark text-sm font-bold group-hover:gap-3 transition-all">
-                    Read Publication
-                    <ArrowRight className="h-4 w-4" />
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <p className="text-center text-lytix-navy/50 font-light">
-            Full publication list available at{" "}
-            <a href="https://www.lytixbiopharma.com/publications" className="text-lytix-teal-dark hover:text-lytix-teal transition-colors" target="_blank" rel="noopener noreferrer">
-              lytixbiopharma.com/publications
-            </a>
-          </p>
+          <FileText className="h-12 w-12 text-lytix-teal/30" />
         </div>
-      </section>
+        
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="group glass-card p-1 rounded-[2rem] glow-border">
+              <div className="bg-white rounded-[1.7rem] p-6 h-full">
+                <p className="text-sm text-lytix-teal-dark font-medium mb-2">Journal Name • 2024</p>
+                <h4 className="font-bold text-lytix-navy mb-3 leading-tight group-hover:text-lytix-teal transition-colors">
+                  Publication Title {i}: Demonstrating the Efficacy of Oncolytic Peptides in Cancer Immunotherapy
+                </h4>
+                <p className="text-sm text-lytix-navy/50 font-light mb-4">
+                  Author A, Author B, Author C, et al.
+                </p>
+                <span className="inline-flex items-center gap-2 text-lytix-teal-dark text-sm font-bold group-hover:gap-3 transition-all">
+                  Read Publication
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <p className="text-center text-lytix-navy/50 font-light">
+          Full publication list available at{" "}
+          <a href="https://www.lytixbiopharma.com/publications" className="text-lytix-teal-dark hover:text-lytix-teal transition-colors" target="_blank" rel="noopener noreferrer">
+            lytixbiopharma.com/publications
+          </a>
+        </p>
+      </div>
+    </section>
 
+    <main className="relative z-[2]">
       {/* Section 5: Posters */}
       <section id="posters" className="py-24 bg-white relative">
         <div className="container mx-auto px-4 lg:px-8">
@@ -314,32 +319,33 @@ export default function SciencePage() {
           </p>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-10" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
-        
-        <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
-          <span className="inline-block px-4 py-1.5 bg-lytix-cyan/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-cyan/30">
-            Explore Further
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
-            Explore Our Pipeline
-          </h2>
-          <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
-            See how our science translates into clinical-stage assets approaching commercialization.
-          </p>
-          <Link 
-            href="/pipeline"
-            className="inline-flex items-center gap-3 px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all"
-          >
-            View Pipeline
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
-      </section>
     </main>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
+      <div className="absolute inset-0 tech-grid opacity-10" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
+        <span className="inline-block px-4 py-1.5 bg-lytix-cyan/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-cyan/30">
+          Explore Further
+        </span>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
+          Explore Our Pipeline
+        </h2>
+        <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
+          See how our science translates into clinical-stage assets approaching commercialization.
+        </p>
+        <Link 
+          href="/pipeline"
+          className="inline-flex items-center gap-3 px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all"
+        >
+          View Pipeline
+          <ArrowRight className="w-5 h-5" />
+        </Link>
+      </div>
+    </section>
+  </div>
   );
 }

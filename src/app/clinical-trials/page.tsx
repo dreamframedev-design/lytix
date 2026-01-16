@@ -4,7 +4,8 @@ import { ArrowRight, ExternalLink, CheckCircle2, Users, Calendar, MapPin } from 
 
 export default function ClinicalTrialsPage() {
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[70vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -215,41 +216,42 @@ export default function ClinicalTrialsPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-10" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
-        
-        <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
-          <span className="inline-block px-4 py-1.5 bg-lytix-teal/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-teal/30">
-            Explore Further
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
-            Explore Our Full Pipeline
-          </h2>
-          <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
-            Discover our complete portfolio of oncolytic molecule therapies in development.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link 
-              href="/pipeline"
-              className="px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all flex items-center gap-3"
-            >
-              View Pipeline
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link 
-              href="/patient-resources"
-              className="px-10 py-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest border border-white/20 hover:border-white/40 transition-all"
-            >
-              Patient Resources
-            </Link>
-          </div>
-        </div>
-      </section>
     </main>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
+      <div className="absolute inset-0 tech-grid opacity-10" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
+        <span className="inline-block px-4 py-1.5 bg-lytix-teal/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-teal/30">
+          Explore Further
+        </span>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
+          Explore Our Full Pipeline
+        </h2>
+        <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
+          Discover our complete portfolio of oncolytic molecule therapies in development.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link 
+            href="/pipeline"
+            className="px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all flex items-center gap-3"
+          >
+            View Pipeline
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+          <Link 
+            href="/patient-resources"
+            className="px-10 py-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest border border-white/20 hover:border-white/40 transition-all"
+          >
+            Patient Resources
+          </Link>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 }

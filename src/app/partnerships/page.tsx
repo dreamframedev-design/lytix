@@ -4,7 +4,8 @@ import { ArrowRight, Handshake, Building2, Globe, Mail, CheckCircle, Target } fr
 
 export default function PartnershipsPage() {
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[70vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -89,98 +90,100 @@ export default function PartnershipsPage() {
           </div>
         </div>
       </section>
+    </main>
 
-      {/* Partnership Opportunities */}
-      <section className="py-24 bg-lytix-light relative">
-        <div className="absolute inset-0 molecular-pattern opacity-50" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-4 block">Open Opportunities</span>
-            <h2 className="text-4xl font-bold tracking-tight text-lytix-navy mb-4">Partnership Opportunities</h2>
-            <p className="text-lg text-lytix-navy/60 font-light max-w-2xl mx-auto">
-              We are actively seeking partners for co-development and outlicensing across key markets.
-            </p>
+    {/* Partnership Opportunities - Outside main for ribbon visibility */}
+    <section className="py-24 bg-lytix-light relative">
+      <div className="absolute inset-0 molecular-pattern opacity-50" />
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-4 block">Open Opportunities</span>
+          <h2 className="text-4xl font-bold tracking-tight text-lytix-navy mb-4">Partnership Opportunities</h2>
+          <p className="text-lg text-lytix-navy/60 font-light max-w-2xl mx-auto">
+            We are actively seeking partners for co-development and outlicensing across key markets.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Asia/APAC */}
+          <div className="group glass-card p-1 rounded-[2.5rem] glow-border">
+            <div className="bg-white rounded-[2.2rem] p-10 h-full flex flex-col">
+              <div className="w-14 h-14 bg-lytix-teal/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lytix-teal group-hover:text-white transition-all duration-300">
+                <Globe className="h-7 w-7 text-lytix-teal group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-xl font-bold text-lytix-navy mb-3">Asia/APAC Region</h3>
+              <p className="text-lytix-navy/60 font-light leading-relaxed mb-6 flex-grow">
+                Seeking partners for ruxotemitide in the Asia/APAC region for neoadjuvant 
+                resectable melanoma and other oncology indications.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral text-[10px] font-bold uppercase tracking-wider border border-lytix-coral/20">
+                  Ruxotemitide
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal text-[10px] font-bold uppercase tracking-wider border border-lytix-teal/20">
+                  Melanoma
+                </span>
+              </div>
+              <a href="mailto:bd@lytixbiopharma.com" className="text-lytix-teal font-bold text-sm animated-underline inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Inquire <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Asia/APAC */}
-            <div className="group glass-card p-1 rounded-[2.5rem] glow-border">
-              <div className="bg-white rounded-[2.2rem] p-10 h-full flex flex-col">
-                <div className="w-14 h-14 bg-lytix-teal/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lytix-teal group-hover:text-white transition-all duration-300">
-                  <Globe className="h-7 w-7 text-lytix-teal group-hover:text-white transition-colors" />
-                </div>
-                <h3 className="text-xl font-bold text-lytix-navy mb-3">Asia/APAC Region</h3>
-                <p className="text-lytix-navy/60 font-light leading-relaxed mb-6 flex-grow">
-                  Seeking partners for ruxotemitide in the Asia/APAC region for neoadjuvant 
-                  resectable melanoma and other oncology indications.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral text-[10px] font-bold uppercase tracking-wider border border-lytix-coral/20">
-                    Ruxotemitide
-                  </span>
-                  <span className="px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal text-[10px] font-bold uppercase tracking-wider border border-lytix-teal/20">
-                    Melanoma
-                  </span>
-                </div>
-                <a href="mailto:bd@lytixbiopharma.com" className="text-lytix-teal font-bold text-sm animated-underline inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-                  Inquire <ArrowRight className="w-4 h-4" />
-                </a>
+          {/* Co-Development */}
+          <div className="group glass-card p-1 rounded-[2.5rem] glow-border">
+            <div className="bg-white rounded-[2.2rem] p-10 h-full flex flex-col">
+              <div className="w-14 h-14 bg-lytix-coral/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lytix-coral group-hover:text-white transition-all duration-300">
+                <Handshake className="h-7 w-7 text-lytix-coral group-hover:text-white transition-colors" />
               </div>
+              <h3 className="text-xl font-bold text-lytix-navy mb-3">Co-Development</h3>
+              <p className="text-lytix-navy/60 font-light leading-relaxed mb-6 flex-grow">
+                Open to co-development partnerships for expanding our pipeline into 
+                new indications and combination therapies.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal text-[10px] font-bold uppercase tracking-wider border border-lytix-teal/20">
+                  Combinations
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-lytix-gold/20 text-lytix-gold text-[10px] font-bold uppercase tracking-wider border border-lytix-gold/30">
+                  New Indications
+                </span>
+              </div>
+              <a href="mailto:bd@lytixbiopharma.com" className="text-lytix-coral font-bold text-sm animated-underline inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Inquire <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
+          </div>
 
-            {/* Co-Development */}
-            <div className="group glass-card p-1 rounded-[2.5rem] glow-border">
-              <div className="bg-white rounded-[2.2rem] p-10 h-full flex flex-col">
-                <div className="w-14 h-14 bg-lytix-coral/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lytix-coral group-hover:text-white transition-all duration-300">
-                  <Handshake className="h-7 w-7 text-lytix-coral group-hover:text-white transition-colors" />
-                </div>
-                <h3 className="text-xl font-bold text-lytix-navy mb-3">Co-Development</h3>
-                <p className="text-lytix-navy/60 font-light leading-relaxed mb-6 flex-grow">
-                  Open to co-development partnerships for expanding our pipeline into 
-                  new indications and combination therapies.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal text-[10px] font-bold uppercase tracking-wider border border-lytix-teal/20">
-                    Combinations
-                  </span>
-                  <span className="px-3 py-1.5 rounded-full bg-lytix-gold/20 text-lytix-gold text-[10px] font-bold uppercase tracking-wider border border-lytix-gold/30">
-                    New Indications
-                  </span>
-                </div>
-                <a href="mailto:bd@lytixbiopharma.com" className="text-lytix-coral font-bold text-sm animated-underline inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-                  Inquire <ArrowRight className="w-4 h-4" />
-                </a>
+          {/* LTX-401 */}
+          <div className="group glass-card p-1 rounded-[2.5rem] glow-border">
+            <div className="bg-white rounded-[2.2rem] p-10 h-full flex flex-col">
+              <div className="w-14 h-14 bg-lytix-gold/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lytix-gold group-hover:text-lytix-navy transition-all duration-300">
+                <Target className="h-7 w-7 text-lytix-gold group-hover:text-lytix-navy transition-colors" />
               </div>
-            </div>
-
-            {/* LTX-401 */}
-            <div className="group glass-card p-1 rounded-[2.5rem] glow-border">
-              <div className="bg-white rounded-[2.2rem] p-10 h-full flex flex-col">
-                <div className="w-14 h-14 bg-lytix-gold/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-lytix-gold group-hover:text-lytix-navy transition-all duration-300">
-                  <Target className="h-7 w-7 text-lytix-gold group-hover:text-lytix-navy transition-colors" />
-                </div>
-                <h3 className="text-xl font-bold text-lytix-navy mb-3">LTX-401 Development</h3>
-                <p className="text-lytix-navy/60 font-light leading-relaxed mb-6 flex-grow">
-                  Partnership opportunities for LTX-401 development in deep-seated 
-                  solid tumors including liver cancer.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal text-[10px] font-bold uppercase tracking-wider border border-lytix-teal/20">
-                    LTX-401
-                  </span>
-                  <span className="px-3 py-1.5 rounded-full bg-purple-50 text-purple-600 text-[10px] font-bold uppercase tracking-wider border border-purple-100">
-                    Solid Tumors
-                  </span>
-                </div>
-                <a href="mailto:bd@lytixbiopharma.com" className="text-lytix-gold font-bold text-sm animated-underline inline-flex items-center gap-2 group-hover:gap-3 transition-all">
-                  Inquire <ArrowRight className="w-4 h-4" />
-                </a>
+              <h3 className="text-xl font-bold text-lytix-navy mb-3">LTX-401 Development</h3>
+              <p className="text-lytix-navy/60 font-light leading-relaxed mb-6 flex-grow">
+                Partnership opportunities for LTX-401 development in deep-seated 
+                solid tumors including liver cancer.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal text-[10px] font-bold uppercase tracking-wider border border-lytix-teal/20">
+                  LTX-401
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-purple-50 text-purple-600 text-[10px] font-bold uppercase tracking-wider border border-purple-100">
+                  Solid Tumors
+                </span>
               </div>
+              <a href="mailto:bd@lytixbiopharma.com" className="text-lytix-gold font-bold text-sm animated-underline inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Inquire <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <main className="relative z-[2]">
       {/* Why Partner Section */}
       <section className="py-24 bg-white border-y border-lytix-ice">
         <div className="container mx-auto px-4 lg:px-8">
@@ -224,42 +227,43 @@ export default function PartnershipsPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-10" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
-        
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center">
-          <span className="inline-block px-4 py-1.5 bg-lytix-coral/20 text-lytix-coral rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-coral/30">
-            Start a Conversation
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
-            Ready to explore a partnership?
-          </h2>
-          <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
-            Contact our business development team to discuss co-development and outlicensing opportunities.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="mailto:bd@lytixbiopharma.com"
-              className="px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all flex items-center gap-3"
-            >
-              <Mail className="w-5 h-5" />
-              Email BD Team
-            </a>
-            <Link 
-              href="/contact"
-              className="px-10 py-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest border border-white/20 hover:border-white/40 transition-all flex items-center gap-3"
-            >
-              Contact Form
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
     </main>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
+      <div className="absolute inset-0 tech-grid opacity-10" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+        <span className="inline-block px-4 py-1.5 bg-lytix-coral/20 text-lytix-coral rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-coral/30">
+          Start a Conversation
+        </span>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 max-w-3xl mx-auto">
+          Ready to explore a partnership?
+        </h2>
+        <p className="text-xl text-lytix-ice/70 font-light max-w-2xl mx-auto mb-10">
+          Contact our business development team to discuss co-development and outlicensing opportunities.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a 
+            href="mailto:bd@lytixbiopharma.com"
+            className="px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all flex items-center gap-3"
+          >
+            <Mail className="w-5 h-5" />
+            Email BD Team
+          </a>
+          <Link 
+            href="/contact"
+            className="px-10 py-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest border border-white/20 hover:border-white/40 transition-all flex items-center gap-3"
+          >
+            Contact Form
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 }

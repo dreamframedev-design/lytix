@@ -46,7 +46,8 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-lytix-light text-lytix-navy">
+    <div className="min-h-screen bg-lytix-light text-lytix-navy">
+    <main className="relative z-[2]">
       {/* Hero Section - Full Width Background */}
       <header className="relative min-h-[60vh] flex items-center overflow-hidden">
         {/* Background Image */}
@@ -354,37 +355,38 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
-        <div className="absolute inset-0 tech-grid opacity-10" />
-        <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
-        
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 max-w-5xl mx-auto">
-            <div className="text-center lg:text-left">
-              <span className="inline-block px-4 py-1.5 bg-lytix-teal/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-teal/30">
-                Partnership Opportunities
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                Ready to explore a partnership?
-              </h2>
-              <p className="text-lg text-lytix-ice/70 font-light max-w-xl">
-                We&apos;re actively seeking partners for co-development and outlicensing across key markets.
-              </p>
-            </div>
-            
-            <Link 
-              href="/partnerships"
-              className="flex-shrink-0 px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all flex items-center gap-3"
-            >
-              Explore Partnerships
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
     </main>
+
+    {/* CTA Section - Outside main for ribbon visibility */}
+    <section className="py-24 bg-navy-gradient text-white relative overflow-hidden">
+      <div className="absolute inset-0 tech-grid opacity-10" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 max-w-5xl mx-auto">
+          <div className="text-center lg:text-left">
+            <span className="inline-block px-4 py-1.5 bg-lytix-teal/20 text-lytix-cyan rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 ring-1 ring-lytix-teal/30">
+              Partnership Opportunities
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              Ready to explore a partnership?
+            </h2>
+            <p className="text-lg text-lytix-ice/70 font-light max-w-xl">
+              We&apos;re actively seeking partners for co-development and outlicensing across key markets.
+            </p>
+          </div>
+          
+          <Link 
+            href="/partnerships"
+            className="flex-shrink-0 px-10 py-5 bg-lytix-coral hover:bg-lytix-raspberry text-white rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-lytix-coral/30 hover:scale-105 transition-all flex items-center gap-3"
+          >
+            Explore Partnerships
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 }
