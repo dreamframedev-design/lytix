@@ -97,198 +97,198 @@ export default function PipelinePage() {
 
   return (
     <div className="bg-lytix-light">
-    <div className="pt-24 relative z-[2]">
-      {/* Hero Section - Full Width Background */}
-      <header className="relative min-h-[60vh] flex items-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/orb 4.webp"
-            alt="Lytix pipeline"
-            fill
-            className="object-cover object-center"
-            priority
-            quality={90}
-          />
-          {/* White gradient overlay - left to right */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent" />
-        </div>
-        
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24 pb-16">
-          <div className="max-w-2xl">
-            <nav className="mb-8 flex items-center gap-2 text-sm font-semibold text-lytix-teal uppercase tracking-[0.25em]">
-              <span>Research</span>
-              <span className="text-lytix-ice">/</span>
-              <span>Pipeline</span>
-            </nav>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-              <span className="block text-lytix-navy">Partner-ready</span>
-              <span className="block text-stylized text-lytix-teal-dark">Pipeline</span>
-            </h1>
-            <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
-              Lytix holds an extensive patent estate protecting its proprietary anti-tumor molecules 
-              and their application in immunotherapy across major pharmaceutical markets.
-            </p>
+      <div className="pt-24 relative z-[2]">
+        {/* Hero Section - Full Width Background */}
+        <header className="relative min-h-[60vh] flex items-center overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/ribbon nice detail 1.webp"
+              alt="Lytix pipeline"
+              fill
+              className="object-cover object-center"
+              priority
+              quality={90}
+            />
+            {/* White gradient overlay - left to right */}
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent" />
           </div>
-        </div>
-      </header>
 
-      {/* Pipeline Interactive Section */}
-      <section className="py-12 bg-lytix-light">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid lg:grid-cols-[320px_1fr] gap-6 items-start">
-            
-            {/* Sidebar Detail Pane - Desktop Only */}
-            <aside className="hidden lg:block sticky top-24 bg-white/95 backdrop-blur-xl border border-lytix-ice rounded-2xl p-6 shadow-xl min-h-[480px]">
-              {/* Asset Badge */}
-              <div className="mb-4">
-                <span className={cn(
-                  "badge-shine inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide border",
-                  selectedItem.asset.includes("LTX-315") 
-                    ? "bg-lytix-teal/10 border-lytix-teal/30 text-lytix-teal-dark"
-                    : "bg-lytix-navy-deep/10 border-lytix-navy-deep/30 text-lytix-navy-deep"
-                )}>
-                  <span className="relative z-10">{selectedItem.assetType}</span>
-                </span>
-              </div>
-
-              {/* Title */}
-              <h2 className="text-2xl font-bold text-lytix-navy mb-2 leading-tight">
-                {selectedItem.popout.title}
-              </h2>
-              <p className="text-sm text-lytix-teal-dark font-medium mb-6">
-                {selectedItem.popout.subtitle}
+          <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24 pb-16">
+            <div className="max-w-2xl">
+              <nav className="mb-8 flex items-center gap-2 text-sm font-semibold text-lytix-teal uppercase tracking-[0.25em]">
+                <span>Research</span>
+                <span className="text-lytix-ice">/</span>
+                <span>Pipeline</span>
+              </nav>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
+                <span className="block text-lytix-navy">Partner-ready</span>
+                <span className="block text-stylized text-lytix-teal-dark">Pipeline</span>
+              </h1>
+              <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
+                Lytix holds an extensive patent estate protecting its proprietary anti-tumor molecules
+                and their application in immunotherapy across major pharmaceutical markets.
               </p>
-
-              {/* Copy */}
-              <div 
-                className="text-lytix-navy/70 text-sm leading-relaxed space-y-4 [&_p]:mb-3 [&_strong]:text-lytix-teal-dark [&_strong]:font-semibold"
-                dangerouslySetInnerHTML={{ __html: selectedItem.popout.copy }}
-              />
-
-              {/* CTA */}
-              {selectedItem.id === "ruxo-neolipa" && (
-                <a 
-                  href="https://clinicaltrials.gov/study/NCT06651151?term=NEOLIPA&rank=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-lytix-teal-dark hover:text-lytix-teal transition-colors"
-                >
-                  View on ClinicalTrials.gov
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-              )}
-              {selectedItem.partner?.name === "VERRICA" && (
-                <a 
-                  href="https://clinicaltrials.gov/study/NCT05188729?term=VP-315&rank=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-lytix-teal-dark hover:text-lytix-teal transition-colors"
-                >
-                  View Verrica Study
-                  <ExternalLink className="h-4 w-4" />
-                </a>
-              )}
-            </aside>
-
-            {/* Pipeline Table */}
-            <div className="bg-white rounded-2xl border border-lytix-ice shadow-lg overflow-hidden">
-              {/* Table Header */}
-              <div className="hidden md:grid grid-cols-[1.2fr_1.6fr_3fr_1.2fr] gap-4 p-5 bg-lytix-navy text-white text-xs font-bold uppercase tracking-wider">
-                <div>Asset</div>
-                <div>Study / Indication</div>
-                <div className="grid grid-cols-4 text-center">
-                  <span>Pre-clinical</span>
-                  <span>Phase I</span>
-                  <span>Phase II</span>
-                  <span>Phase III</span>
-                </div>
-                <div>Partner / Status</div>
-              </div>
-
-              {/* Ruxotemitide Section Header */}
-              <div className="px-5 py-4 bg-gradient-to-r from-lytix-teal/10 to-lytix-cyan/5 border-b border-lytix-ice">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-lytix-teal relative">
-                    <span className="absolute inset-0 rounded-full bg-lytix-teal animate-ping opacity-40" />
-                  </div>
-                  <span className="font-bold text-lg text-lytix-teal-dark">Ruxotemitide (LTX-315)</span>
-                  <span className="text-sm text-lytix-navy/60">— Oncolytic peptide for superficial tumors</span>
-                </div>
-              </div>
-
-              {/* Ruxotemitide Rows */}
-              {PIPELINE_DATA.filter(d => d.asset.includes("LTX-315")).map((item, index) => (
-                <PipelineRow
-                  key={item.id}
-                  item={item}
-                  isSelected={selectedItem.id === item.id}
-                  isHovered={hoveredId === item.id}
-                  animationIndex={index}
-                  onHover={() => {
-                    setHoveredId(item.id);
-                    setSelectedItem(item);
-                  }}
-                  onLeave={() => setHoveredId(null)}
-                  onClick={() => setSelectedItem(item)}
-                  getProgressWidth={getProgressWidth}
-                />
-              ))}
-
-              {/* LTX-401 Section Header */}
-              <div className="px-5 py-4 bg-gradient-to-r from-lytix-navy-deep/10 to-lytix-teal-dark/5 border-b border-t border-lytix-ice">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-lytix-navy-deep relative">
-                    <span className="absolute inset-0 rounded-full bg-lytix-navy-deep animate-ping opacity-40" />
-                  </div>
-                  <span className="font-bold text-lg text-lytix-navy-deep">LTX-401</span>
-                  <span className="text-sm text-lytix-navy/60">— Oncolytic molecule for deep-seated tumors</span>
-                </div>
-              </div>
-
-              {/* LTX-401 Rows */}
-              {PIPELINE_DATA.filter(d => d.asset === "LTX-401").map((item, index) => (
-                <PipelineRow
-                  key={item.id}
-                  item={item}
-                  isSelected={selectedItem.id === item.id}
-                  isHovered={hoveredId === item.id}
-                  animationIndex={index + 3}
-                  onHover={() => {
-                    setHoveredId(item.id);
-                    setSelectedItem(item);
-                  }}
-                  onLeave={() => setHoveredId(null)}
-                  onClick={() => setSelectedItem(item)}
-                  getProgressWidth={getProgressWidth}
-                />
-              ))}
             </div>
           </div>
+        </header>
+
+        {/* Pipeline Interactive Section */}
+        <section className="py-12 bg-lytix-light">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid lg:grid-cols-[320px_1fr] gap-6 items-start">
+
+              {/* Sidebar Detail Pane - Desktop Only */}
+              <aside className="hidden lg:block sticky top-24 bg-white/95 backdrop-blur-xl border border-lytix-ice rounded-2xl p-6 shadow-xl min-h-[480px]">
+                {/* Asset Badge */}
+                <div className="mb-4">
+                  <span className={cn(
+                    "badge-shine inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide border",
+                    selectedItem.asset.includes("LTX-315")
+                      ? "bg-lytix-teal/10 border-lytix-teal/30 text-lytix-teal-dark"
+                      : "bg-lytix-navy-deep/10 border-lytix-navy-deep/30 text-lytix-navy-deep"
+                  )}>
+                    <span className="relative z-10">{selectedItem.assetType}</span>
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl font-bold text-lytix-navy mb-2 leading-tight">
+                  {selectedItem.popout.title}
+                </h2>
+                <p className="text-sm text-lytix-teal-dark font-medium mb-6">
+                  {selectedItem.popout.subtitle}
+                </p>
+
+                {/* Copy */}
+                <div
+                  className="text-lytix-navy/70 text-sm leading-relaxed space-y-4 [&_p]:mb-3 [&_strong]:text-lytix-teal-dark [&_strong]:font-semibold"
+                  dangerouslySetInnerHTML={{ __html: selectedItem.popout.copy }}
+                />
+
+                {/* CTA */}
+                {selectedItem.id === "ruxo-neolipa" && (
+                  <a
+                    href="https://clinicaltrials.gov/study/NCT06651151?term=NEOLIPA&rank=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-lytix-teal-dark hover:text-lytix-teal transition-colors"
+                  >
+                    View on ClinicalTrials.gov
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
+                {selectedItem.partner?.name === "VERRICA" && (
+                  <a
+                    href="https://clinicaltrials.gov/study/NCT05188729?term=VP-315&rank=1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-lytix-teal-dark hover:text-lytix-teal transition-colors"
+                  >
+                    View Verrica Study
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
+              </aside>
+
+              {/* Pipeline Table */}
+              <div className="bg-white rounded-2xl border border-lytix-ice shadow-lg overflow-hidden">
+                {/* Table Header */}
+                <div className="hidden md:grid grid-cols-[1.2fr_1.6fr_3fr_1.2fr] gap-4 p-5 bg-lytix-navy text-white text-xs font-bold uppercase tracking-wider">
+                  <div>Asset</div>
+                  <div>Study / Indication</div>
+                  <div className="grid grid-cols-4 text-center">
+                    <span>Pre-clinical</span>
+                    <span>Phase I</span>
+                    <span>Phase II</span>
+                    <span>Phase III</span>
+                  </div>
+                  <div>Partner / Status</div>
+                </div>
+
+                {/* Ruxotemitide Section Header */}
+                <div className="px-5 py-4 bg-gradient-to-r from-lytix-teal/10 to-lytix-cyan/5 border-b border-lytix-ice">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 rounded-full bg-lytix-teal relative">
+                      <span className="absolute inset-0 rounded-full bg-lytix-teal animate-ping opacity-40" />
+                    </div>
+                    <span className="font-bold text-lg text-lytix-teal-dark">Ruxotemitide (LTX-315)</span>
+                    <span className="text-sm text-lytix-navy/60">— Oncolytic peptide for superficial tumors</span>
+                  </div>
+                </div>
+
+                {/* Ruxotemitide Rows */}
+                {PIPELINE_DATA.filter(d => d.asset.includes("LTX-315")).map((item, index) => (
+                  <PipelineRow
+                    key={item.id}
+                    item={item}
+                    isSelected={selectedItem.id === item.id}
+                    isHovered={hoveredId === item.id}
+                    animationIndex={index}
+                    onHover={() => {
+                      setHoveredId(item.id);
+                      setSelectedItem(item);
+                    }}
+                    onLeave={() => setHoveredId(null)}
+                    onClick={() => setSelectedItem(item)}
+                    getProgressWidth={getProgressWidth}
+                  />
+                ))}
+
+                {/* LTX-401 Section Header */}
+                <div className="px-5 py-4 bg-gradient-to-r from-lytix-navy-deep/10 to-lytix-teal-dark/5 border-b border-t border-lytix-ice">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 rounded-full bg-lytix-navy-deep relative">
+                      <span className="absolute inset-0 rounded-full bg-lytix-navy-deep animate-ping opacity-40" />
+                    </div>
+                    <span className="font-bold text-lg text-lytix-navy-deep">LTX-401</span>
+                    <span className="text-sm text-lytix-navy/60">— Oncolytic molecule for deep-seated tumors</span>
+                  </div>
+                </div>
+
+                {/* LTX-401 Rows */}
+                {PIPELINE_DATA.filter(d => d.asset === "LTX-401").map((item, index) => (
+                  <PipelineRow
+                    key={item.id}
+                    item={item}
+                    isSelected={selectedItem.id === item.id}
+                    isHovered={hoveredId === item.id}
+                    animationIndex={index + 3}
+                    onHover={() => {
+                      setHoveredId(item.id);
+                      setSelectedItem(item);
+                    }}
+                    onLeave={() => setHoveredId(null)}
+                    onClick={() => setSelectedItem(item)}
+                    getProgressWidth={getProgressWidth}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* CTA Section - Outside main for ribbon visibility */}
+      <section className="py-20 bg-gradient-to-r from-lytix-teal to-lytix-teal-dark text-white relative overflow-hidden">
+        <div className="absolute inset-0 tech-grid opacity-10" />
+        <div className="absolute right-0 top-0 w-96 h-96 bg-lytix-cyan/20 rounded-full blur-3xl" />
+        <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Interested in Partnership Opportunities?
+          </h2>
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            We are actively seeking partners for co-development and outlicensing across key markets.
+          </p>
+          <Link href="/partnerships">
+            <Button size="lg" className="bg-white text-lytix-teal-dark hover:bg-lytix-ice shadow-lg">
+              Explore Partnerships
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
-
-    {/* CTA Section - Outside main for ribbon visibility */}
-    <section className="py-20 bg-gradient-to-r from-lytix-teal to-lytix-teal-dark text-white relative overflow-hidden">
-      <div className="absolute inset-0 tech-grid opacity-10" />
-      <div className="absolute right-0 top-0 w-96 h-96 bg-lytix-cyan/20 rounded-full blur-3xl" />
-      <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Interested in Partnership Opportunities?
-        </h2>
-        <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-          We are actively seeking partners for co-development and outlicensing across key markets.
-        </p>
-        <Link href="/partnerships">
-          <Button size="lg" className="bg-white text-lytix-teal-dark hover:bg-lytix-ice shadow-lg">
-            Explore Partnerships
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </Link>
-      </div>
-    </section>
-  </div>
   );
 }
 
@@ -342,7 +342,7 @@ function PipelineRow({
             isSelected && "rotate-180 text-lytix-teal"
           )} />
         </div>
-        
+
         {/* Study Name */}
         <div>
           <p className="font-semibold text-lytix-navy">{item.study}</p>
@@ -374,9 +374,9 @@ function PipelineRow({
               <span />
             </div>
             {/* Progress fill with shine */}
-            <div 
+            <div
               className="pipeline-bar-fill absolute left-0 top-0 bottom-0 rounded-full bg-gradient-to-r from-lytix-teal via-lytix-teal to-lytix-cyan z-0 overflow-hidden"
-              style={{ 
+              style={{
                 width: `${getProgressWidth(item.progress)}%`,
                 animationDelay: `${animationIndex * 0.2}s`
               }}
@@ -418,7 +418,7 @@ function PipelineRow({
           <div className="bg-gradient-to-br from-lytix-ice to-white rounded-xl border border-lytix-teal/20 p-5">
             <h4 className="text-lg font-bold text-lytix-navy mb-1">{item.popout.title}</h4>
             <p className="text-sm text-lytix-teal-dark font-medium mb-3">{item.popout.subtitle}</p>
-            <div 
+            <div
               className="text-lytix-navy/70 text-sm leading-relaxed [&_p]:mb-2 [&_strong]:text-lytix-teal-dark"
               dangerouslySetInnerHTML={{ __html: item.popout.copy }}
             />
