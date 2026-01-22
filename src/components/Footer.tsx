@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Linkedin, Twitter, ArrowRight, MapPin, Phone } from "lucide-react";
+import { Mail, Linkedin, ArrowRight, MapPin, Phone } from "lucide-react";
 
 const footerLinks = {
   company: [
@@ -33,10 +33,10 @@ export function Footer() {
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-lytix-teal/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-lytix-coral/5 rounded-full blur-3xl" />
-      
+
       {/* Decorative top border */}
       <div className="h-1.5 bg-gradient-to-r from-lytix-teal via-lytix-cyan to-lytix-gold" />
-      
+
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Main Footer */}
         <div className="py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
@@ -52,31 +52,23 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-lytix-ice/60 leading-relaxed mb-8 font-light">
-              Redefining the standard of care in the neoadjuvant setting with first-in-class oncolytic molecule immunotherapies.
+              Oncolytic Molecules that Kill Cancer & Prevent Recurrence
             </p>
-            
+
             {/* Location Badge */}
             <div className="flex items-center gap-2 text-lytix-ice/50 text-sm mb-6">
               <MapPin className="h-4 w-4 text-lytix-teal" />
               <span>Oslo, Norway</span>
             </div>
-            
+
             <div className="flex items-center gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/company/lytix-biopharma?originalSubdomain=no"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-white/5 hover:bg-lytix-teal text-lytix-cyan hover:text-white transition-all duration-300 hover:scale-110"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/5 hover:bg-lytix-teal text-lytix-cyan hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="mailto:info@lytixbiopharma.com"
@@ -161,39 +153,21 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            
+
             {/* CTA in footer */}
             <div className="mt-8 pt-6 border-t border-white/10">
-              <Link 
+              <Link
                 href="/partnerships"
                 className="inline-flex items-center gap-2 text-sm font-bold text-lytix-coral hover:text-lytix-gold transition-all group"
               >
-                Partner With Us 
+                Partner With Us
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </div>
         </div>
 
-        {/* Authority Bar */}
-        <div className="py-8 border-t border-white/10">
-          <div className="flex flex-wrap items-center justify-center gap-12 text-center">
-            <div>
-              <div className="text-[9px] font-black text-lytix-ice/40 uppercase tracking-[0.2em] mb-1">Stage</div>
-              <div className="text-sm font-bold text-lytix-ice/80">Clinical Phase 2</div>
-            </div>
-            <div className="h-8 w-px bg-white/10 hidden md:block" />
-            <div>
-              <div className="text-[9px] font-black text-lytix-ice/40 uppercase tracking-[0.2em] mb-1">Platform</div>
-              <div className="text-sm font-bold text-lytix-ice/80">Oncolytic Molecules</div>
-            </div>
-            <div className="h-8 w-px bg-white/10 hidden md:block" />
-            <div>
-              <div className="text-[9px] font-black text-lytix-ice/40 uppercase tracking-[0.2em] mb-1">Focus</div>
-              <div className="text-sm font-bold text-lytix-ice/80">Immuno-Oncology</div>
-            </div>
-          </div>
-        </div>
+
 
         {/* Bottom Footer */}
         <div className="py-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">

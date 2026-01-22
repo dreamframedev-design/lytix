@@ -101,9 +101,9 @@ export function Navbar() {
             <Image
               src="/images/Lytix_logo-01.svg"
               alt="Lytix Biopharma"
-              width={140}
-              height={40}
-              className="h-10 w-auto"
+              width={180}
+              height={52}
+              className="h-13 w-auto"
               priority
             />
           </Link>
@@ -116,9 +116,11 @@ export function Navbar() {
                   <NavigationMenuItem key={link.href}>
                     {link.dropdown ? (
                       <>
-                        <NavigationMenuTrigger className="bg-transparent text-lytix-navy hover:bg-lytix-ice/50 hover:text-lytix-teal-dark data-[state=open]:bg-lytix-ice/50">
-                          {link.title}
-                        </NavigationMenuTrigger>
+                        <Link href={link.href} legacyBehavior passHref>
+                          <NavigationMenuTrigger className="bg-transparent text-lytix-navy hover:bg-lytix-ice/50 hover:text-lytix-teal-dark data-[state=open]:bg-lytix-ice/50">
+                            {link.title}
+                          </NavigationMenuTrigger>
+                        </Link>
                         <NavigationMenuContent>
                           <ul className="grid w-[420px] gap-2 p-5 md:w-[500px] md:grid-cols-1 lg:w-[420px] bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-lytix-ice">
                             {link.dropdown.map((item) => (
@@ -177,7 +179,7 @@ export function Navbar() {
                       />
                     </Link>
                   </div>
-                  
+
                   <div className="flex-1 overflow-y-auto py-4">
                     <div className="flex flex-col space-y-1 px-4">
                       {navLinks.map((link) => (
@@ -202,7 +204,7 @@ export function Navbar() {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="p-6 border-t border-lytix-ice bg-lytix-light">
                     <SheetClose asChild>
                       <Link href="/contact" className="block">

@@ -27,32 +27,15 @@ export default function HomePage() {
           <div className="max-w-2xl">
             {/* Hero Content - Staggered animations */}
             <div className="space-y-8">
-              <div className="animate-fade-up opacity-0 stagger-1 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm border border-lytix-teal/30 text-lytix-teal-dark text-sm font-medium shadow-sm">
-                <div className="w-2 h-2 rounded-full bg-lytix-coral animate-pulse" />
-                <span>First-in-Class Immunotherapy</span>
-              </div>
               
-              <h1 className="animate-fade-up opacity-0 stagger-2 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-lytix-navy drop-shadow-sm">
-                <span className="text-lytix-teal">Oncolytic Molecules</span> that Kill Cancer & Prevent Recurrence
+              <h1 className="animate-fade-up opacity-0 stagger-1 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-lytix-navy drop-shadow-sm">
+                Oncolytic Molecules that Kill Cancer & Prevent Recurrence
               </h1>
               
-              <p className="animate-fade-up opacity-0 stagger-3 text-xl md:text-2xl text-lytix-navy/80 leading-relaxed max-w-xl">
+              <p className="animate-fade-up opacity-0 stagger-2 text-xl md:text-2xl text-lytix-navy/80 leading-relaxed max-w-xl">
                 Neoadjuvant Immunotherapy with Durable Responses Approaching Commercialization
               </p>
               
-              <div className="animate-fade-up opacity-0 stagger-4 flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href="/science">
-                  <Button size="lg" className="w-full sm:w-auto bg-lytix-navy-deep hover:bg-lytix-cyan hover:text-lytix-navy text-white text-lg px-8 h-14 shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
-                    Explore Our Science
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <Link href="/pipeline">
-                  <Button size="lg" className="w-full sm:w-auto text-lg px-8 h-14 bg-white text-lytix-navy-deep hover:bg-lytix-cyan hover:text-lytix-navy shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
-                    View Pipeline
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -103,12 +86,7 @@ export default function HomePage() {
                 Our mission is to deliver transformative medicines that work in synergy with immune checkpoint inhibitors, to offer patients the best outcomes as fast as possible.
               </p>
               
-              <Link href="/about">
-                <Button variant="link" className="px-0 text-lytix-teal-dark hover:text-lytix-teal text-lg group/btn">
-                  Learn More About Us
-                  <ChevronRight className="ml-1 h-5 w-5 group-hover/btn:translate-x-2 transition-transform duration-300" />
-                </Button>
-              </Link>
+
             </div>
           </div>
         </div>
@@ -126,7 +104,7 @@ export default function HomePage() {
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
-                Our Oncolytic Molecule Drugs <span className="text-lytix-coral">Overcome Immunosuppression</span> Within the Tumor Microenvironment
+                Our Oncolytic Molecule Drugs Overcome Immunosuppression Within the Tumor Microenvironment
               </h2>
               
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
@@ -165,10 +143,6 @@ export default function HomePage() {
       <section className="pt-32 pb-12 bg-white relative z-[2]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-up stagger-1">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lytix-gold/10 text-lytix-navy text-sm font-medium border border-lytix-gold/30 hover:bg-lytix-gold/20 transition-colors">
-              <div className="w-2 h-2 rounded-full bg-lytix-gold animate-pulse" />
-              <span>Our Pipeline</span>
-            </div>
             
             <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
               Our Partner-ready Pipeline is Led by <span className="gradient-text">Ruxotemitide</span>, Rapidly Approaching Commercialization
@@ -308,7 +282,7 @@ export default function HomePage() {
               </p>
               
               <Link href="/clinical-trials">
-                <Button size="lg" className="bg-lytix-coral hover:bg-lytix-raspberry text-white shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] animate-glow-pulse">
+                <Button size="lg" className="bg-lytix-teal hover:bg-lytix-cyan hover:text-lytix-navy text-white shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
                   Explore Clinical Trials
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -336,7 +310,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="order-2 lg:order-1 animate-slide-left stagger-2">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl group hover:shadow-2xl transition-shadow duration-500">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-shadow duration-500">
                 <Image
                   src="/images/doctor hero.webp"
                   alt="Medical professional - Partnership opportunities"
@@ -344,12 +318,11 @@ export default function HomePage() {
                   height={500}
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-lytix-raspberry/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
             
             <div className="order-1 lg:order-2 space-y-6 animate-slide-right stagger-1">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lytix-raspberry/10 text-lytix-raspberry text-sm font-medium hover:bg-lytix-raspberry/20 transition-colors">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal-dark text-sm font-medium hover:bg-lytix-teal/20 transition-colors">
                 <Handshake className="h-4 w-4" />
                 <span>Partnerships</span>
               </div>
