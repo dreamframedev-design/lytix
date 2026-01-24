@@ -29,9 +29,8 @@ export default function PartnershipsPage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Partnerships</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-                <span className="block text-lytix-navy">Partner with</span>
-                <span className="block text-stylized text-lytix-teal-dark">Lytix Biopharma</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
+                Partner with <span className="text-lytix-teal-dark">Lytix Biopharma</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed mb-10">
                 We are open to discussions on co-development and outlicensing opportunities.

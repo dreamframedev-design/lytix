@@ -11,10 +11,10 @@ export default function PatientResourcesPage() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/images/patient hero.webp"
+              src="/images/mountain hero.webp"
               alt="Lytix patient support"
               fill
-              className="object-cover object-center"
+              className="object-cover object-center scale-x-[-1]"
               priority
               quality={90}
             />
@@ -29,9 +29,8 @@ export default function PatientResourcesPage() {
                 <span className="text-lytix-ice">/</span>
                 <span>For Patients</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-                <span className="block text-lytix-navy">Patient</span>
-                <span className="block text-stylized text-lytix-teal-dark">Resources</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
+                Patient <span className="text-lytix-teal-dark">Resources</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 We are committed to supporting patients throughout their treatment journey.

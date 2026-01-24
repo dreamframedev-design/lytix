@@ -50,9 +50,8 @@ export default function ClinicalAdvisoryPage() {
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Back to About
               </Link>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-                <span className="block text-lytix-navy">Clinical Advisory</span>
-                <span className="block text-stylized text-lytix-gold">Board</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
+                Clinical Advisory <span className="text-lytix-gold">Board</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Our Clinical Advisory Board comprises world-class experts in oncology, immunology, and clinical development

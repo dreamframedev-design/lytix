@@ -71,9 +71,8 @@ export default function SciencePage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Our Science</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-                <span className="block text-lytix-navy">Our</span>
-                <span className="block text-stylized text-lytix-teal-dark">Science</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
+                Our <span className="text-lytix-teal-dark">Science</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Lytix Biopharma has developed a groundbreaking oncolytic molecule platform that overcomes
@@ -212,7 +211,7 @@ export default function SciencePage() {
                 {/* Result */}
                 <div className="flex gap-6">
                   <div className="flex-shrink-0 w-16 h-16 rounded-full bg-lytix-gold flex items-center justify-center text-white font-bold text-2xl shadow-xl shadow-lytix-gold/30">
-                    3
+                    <Target className="h-8 w-8" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-lytix-navy">Abscopal Effect</h3>

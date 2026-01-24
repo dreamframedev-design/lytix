@@ -74,8 +74,8 @@ const PIPELINE_DATA = [
     indication: "Solid tumors (deep seated lesions)",
     combination: null,
     progress: 0.85,
-    status: "Preparing for Phase I",
-    statusType: "preparing",
+    status: "Actively Seeking Partnerships",
+    statusType: "seeking",
     partner: null,
     popout: {
       title: "LTX-401",
@@ -121,9 +121,8 @@ export default function PipelinePage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Pipeline</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-                <span className="block text-lytix-navy">Partner-ready</span>
-                <span className="block text-stylized text-lytix-teal-dark">Pipeline</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
+                Partner-ready <span className="text-lytix-teal-dark">Pipeline</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Lytix holds an extensive patent estate protecting its proprietary anti-tumor molecules

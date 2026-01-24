@@ -22,24 +22,24 @@ export default function HomePage() {
           {/* Subtle white gradient overlay - left to right */}
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent" />
         </div>
-        
+
         <div className="container mx-auto px-4 lg:px-8 pt-24 pb-16 relative z-10">
           <div className="max-w-2xl">
             {/* Hero Content - Staggered animations */}
             <div className="space-y-8">
-              
+
               <h1 className="animate-fade-up opacity-0 stagger-1 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-lytix-navy drop-shadow-sm">
                 Oncolytic Molecules that Kill Cancer & Prevent Recurrence
               </h1>
-              
+
               <p className="animate-fade-up opacity-0 stagger-2 text-xl md:text-2xl text-lytix-navy/80 leading-relaxed max-w-xl">
                 Neoadjuvant Immunotherapy with Durable Responses Approaching Commercialization
               </p>
-              
+
             </div>
           </div>
         </div>
-        
+
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-up stagger-6 opacity-0">
           <div className="animate-float">
@@ -67,25 +67,25 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-lytix-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
-            
+
             <div className="order-1 lg:order-2 space-y-6 animate-slide-right stagger-1">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal-dark text-sm font-medium hover:bg-lytix-teal/20 transition-colors">
                 <Target className="h-4 w-4" />
                 <span>Our Mission</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
                 Lytix Biopharma is Redefining the Standard of Care in the <span className="text-lytix-teal-dark">Neoadjuvant Setting</span>
               </h2>
-              
+
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
                 Lytix Biopharma is developing a pipeline of oncolytic molecule therapies that treat both superficial and deep-seated tumors. Our focus is to re-define the standard of care in the neoadjuvant setting, through providing patients with first-in-class, first-line immunotherapies that kill cancer and prevent recurrence.
               </p>
-              
+
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
                 Our mission is to deliver transformative medicines that work in synergy with immune checkpoint inhibitors, to offer patients the best outcomes as fast as possible.
               </p>
-              
+
 
             </div>
           </div>
@@ -102,19 +102,19 @@ export default function HomePage() {
                 <Microscope className="h-4 w-4" />
                 <span>Our Science</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
                 Our Oncolytic Molecule Drugs Overcome Immunosuppression Within the Tumor Microenvironment
               </h2>
-              
+
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
                 Lytix Biopharma has built an oncolytic molecule platform that overcomes immunosuppression within the tumor microenvironment via a two-step mode of action.
               </p>
-              
+
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
                 Our drugs destroy the membranes of cancer cells, releasing both tumor antigens and potent immunostimulatory molecules that initiate a broad immune cell response. The resulting immune cell infiltration into the tumor microenvironment delivers broad and durable anti-tumor immunity.
               </p>
-              
+
               <Link href="/science">
                 <Button variant="link" className="px-0 text-lytix-teal-dark hover:text-lytix-teal text-lg group/btn">
                   Discover Our Science
@@ -122,7 +122,7 @@ export default function HomePage() {
                 </Button>
               </Link>
             </div>
-            
+
             <div className="animate-slide-right stagger-2">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl group hover:shadow-3xl transition-shadow duration-500">
                 <Image
@@ -143,12 +143,12 @@ export default function HomePage() {
       <section className="pt-32 pb-12 bg-white relative z-[2]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-up stagger-1">
-            
+
             <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
               Our Partner-ready Pipeline is Led by <span className="gradient-text">Ruxotemitide</span>, Rapidly Approaching Commercialization
             </h2>
           </div>
-          
+
           {/* Pipeline Preview with Fade Effect */}
           <div className="relative animate-scale-up stagger-2">
             {/* Pipeline Table Container - clips content */}
@@ -164,7 +164,7 @@ export default function HomePage() {
                     <div className="text-center">Phase III</div>
                     <div className="text-center">Partner</div>
                   </div>
-                  
+
                   {/* Ruxotemitide - Pivotal Study Row */}
                   <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice hover:bg-lytix-light/50 transition-colors">
                     <div className="col-span-2">
@@ -195,7 +195,7 @@ export default function HomePage() {
                       </span>
                     </div>
                   </div>
-                  
+
                   {/* LTX-401 Row */}
                   <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice hover:bg-lytix-light/50 transition-colors">
                     <div className="col-span-2">
@@ -221,12 +221,12 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="text-center">
-                      <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-gold/10 text-lytix-navy font-semibold text-xs border border-lytix-gold/30">
-                        Preparing Phase I
+                      <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral font-semibold text-xs border border-lytix-coral/20">
+                        Seeking Partners
                       </span>
                     </div>
                   </div>
-                  
+
                   {/* Additional rows that will be hidden by gradient */}
                   <div className="grid grid-cols-7 gap-4 items-center py-5 px-6 border-b border-lytix-ice">
                     <div className="col-span-2">
@@ -243,10 +243,10 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            
+
             {/* White Gradient Fade Overlay */}
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white to-transparent pointer-events-none" />
-            
+
             {/* CTA Button positioned over the gradient */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-2 z-10">
               <Link href="/pipeline">
@@ -264,7 +264,7 @@ export default function HomePage() {
       <section className="py-32 bg-navy-gradient text-white relative overflow-hidden">
         <div className="absolute inset-0 tech-grid opacity-10" />
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-lytix-teal/10 to-transparent" />
-        
+
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="space-y-6 animate-slide-left stagger-1">
@@ -272,15 +272,15 @@ export default function HomePage() {
                 <Users className="h-4 w-4" />
                 <span>Clinical Trials</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold leading-tight">
                 Learn More About Our Deep <span className="text-lytix-cyan">Clinical Trial Validation</span>
               </h2>
-              
+
               <p className="text-lg text-lytix-ice/80 leading-relaxed">
                 Lytix Biopharma has completed multiple Phase 2 trials, and is currently enrolling patients in an investigator-led Phase 2 study, NeoLIPA which is evaluating ruxotemitide (formerly LTX-315) in combination with pembrolizumab in resectable melanoma patients in the neoadjuvant setting.
               </p>
-              
+
               <Link href="/clinical-trials">
                 <Button size="lg" className="bg-lytix-teal hover:bg-lytix-cyan hover:text-lytix-navy text-white shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
                   Explore Clinical Trials
@@ -288,7 +288,7 @@ export default function HomePage() {
                 </Button>
               </Link>
             </div>
-            
+
             <div className="animate-slide-right stagger-2">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group hover:shadow-lytix-cyan/20 hover:shadow-3xl transition-all duration-500">
                 <Image
@@ -320,21 +320,21 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            
+
             <div className="order-1 lg:order-2 space-y-6 animate-slide-right stagger-1">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal-dark text-sm font-medium hover:bg-lytix-teal/20 transition-colors">
                 <Handshake className="h-4 w-4" />
                 <span>Partnerships</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
                 Our Partnering Strategy is Built to Deliver <span className="text-lytix-coral">Commercial Success</span>
               </h2>
-              
+
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
                 Interested in learning more about our assets? At Lytix Biopharma we are open to discussions on co-development and outlicensing opportunities.
               </p>
-              
+
               {/* Current Partnership */}
               <div className="p-6 rounded-xl bg-gradient-to-br from-lytix-ice to-white border border-lytix-teal/20 hover:border-lytix-teal/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-2 mb-3">
@@ -354,7 +354,7 @@ export default function HomePage() {
                   <ExternalLink className="ml-2 h-4 w-4 group-hover/link:rotate-12 transition-transform" />
                 </a>
               </div>
-              
+
               <Link href="/partnerships">
                 <Button variant="link" className="px-0 text-lytix-teal-dark hover:text-lytix-teal text-lg group/btn">
                   Learn About Partnerships
@@ -375,17 +375,17 @@ export default function HomePage() {
               <FileText className="h-4 w-4" />
               <span>Investor Relations</span>
             </div>
-            
+
             <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
               Latest Press Releases
             </h2>
           </div>
-          
+
           {/* Press Releases Grid */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[1, 2, 3].map((i) => (
-              <Card 
-                key={i} 
+              <Card
+                key={i}
                 className={`card-hover border-lytix-ice bg-white group animate-scale-up stagger-${i + 1}`}
               >
                 <CardHeader>
@@ -408,7 +408,7 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
-          
+
           <div className="text-center animate-fade-up stagger-5">
             <Link href="/investor-relations">
               <Button variant="outline" size="lg" className="border-2 border-lytix-teal text-lytix-teal-dark hover:bg-lytix-teal hover:text-white hover:scale-[1.02] transition-all">

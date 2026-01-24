@@ -39,7 +39,7 @@ export default function InvestorRelationsPage() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/images/oystein presentation hero.webp"
+              src="/images/presentation hero.webp"
               alt="Lytix Biopharma corporate"
               fill
               className="object-cover object-center"
@@ -57,9 +57,8 @@ export default function InvestorRelationsPage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Investors</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-                <span className="block text-lytix-navy">Investor</span>
-                <span className="block text-stylized text-lytix-teal-dark">Relations</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
+                Investor <span className="text-lytix-teal-dark">Relations</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed mb-10">
                 Stay informed about Lytix Biopharma&apos;s financial performance, corporate governance,
