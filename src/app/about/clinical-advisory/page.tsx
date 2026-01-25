@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const advisoryBoard = [
   {
     name: "James Allison",
-    title: "Clinical Advisor",
+    title: "",
     image: "/images/headshots/Jim Allison SH.jpg",
     bio: [
       "Dr. Allison is the Chair of the Department of Immunology, the Vivian L. Smith Distinguished Chair in Immunology, Director of the Parker Institute for Cancer Research, and the Executive Director of the Immunotherapy Platform at MD Anderson Cancer Center. Dr. Allison spent a distinguished career studying the regulation of T-cell responses and developing strategies for cancer immunotherapy.",
@@ -16,7 +16,7 @@ const advisoryBoard = [
   },
   {
     name: "Pam Sharma",
-    title: "Clinical Advisor",
+    title: "",
     image: "/images/headshots/Pam Sharma SH.jpg",
     bio: [
       "Dr. Sharma is professor in the departments of Genitourinary Medical Oncology and Immunology, and the Scientific Director for the Immunotherapy Platform at MD Anderson Cancer Center. She is also a Scientific Director of Scientific Programs for the James P. Allison Institute at MD Anderson Cancer Center.",
@@ -26,7 +26,7 @@ const advisoryBoard = [
   },
   {
     name: "Aurélien Marabelle",
-    title: "Clinical Advisor",
+    title: "",
     image: "/images/headshots/Marabelle SH.jpg",
     bio: [
       "Dr. Marabelle is the Clinical Director of the Cancer Immunotherapy Program at Gustave Roussy Cancer Center in Villejuif, France, and he works as a Senior Medical Oncologist and an investigator in the Drug Development Department (DITEP). He leads a translational research laboratory (LRTI) within the INSERM U1015 with a focus on mechanisms of action of immune targeted therapies. He is also the director of the Clinical Investigation Center BIOTHERIES dedicated to intratumoral immunotherapies.",
@@ -87,7 +87,9 @@ export default function ClinicalAdvisoryPage() {
                       <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-gold mb-3 block">Scientific Advisory</span>
                       <h2 className="text-3xl lg:text-4xl font-bold text-[#40525C] mb-2">{member.name}</h2>
                       <div className="h-1 w-12 bg-lytix-gold rounded-full mb-4" />
-                      <p className="text-xl lg:text-2xl font-medium text-lytix-navy/60">{member.title}</p>
+                      {member.title && (
+                        <p className="text-xl lg:text-2xl font-medium text-lytix-navy/60">{member.title}</p>
+                      )}
                     </div>
 
                     <div className="space-y-6">
