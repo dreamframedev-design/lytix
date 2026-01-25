@@ -69,11 +69,11 @@ export default function ClinicalAdvisoryPage() {
               {advisoryBoard.map((member, index) => (
                 <div
                   key={index}
-                  className="group relative grid lg:grid-cols-[400px_1fr] gap-12 items-start p-8 lg:p-12 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-lytix-ice/50 hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden"
+                  className="group relative grid lg:grid-cols-[320px_1fr] gap-12 items-start p-8 lg:p-12 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-lytix-ice/50 hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden"
                 >
                   <div className="absolute -right-20 -top-20 w-80 h-80 bg-lytix-gold/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
-                  <div className="relative aspect-[4/5] lg:aspect-square overflow-hidden rounded-[2rem] shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 bg-lytix-light">
+                  <div className="relative w-full aspect-[4/5] lg:aspect-square overflow-hidden rounded-[2rem] shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 bg-lytix-light max-w-[320px] lg:max-w-none lg:mx-0">
                     <Image
                       src={member.image}
                       alt={member.name}
