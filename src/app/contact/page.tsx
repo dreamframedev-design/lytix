@@ -71,8 +71,8 @@ export default function ContactPage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Get in Touch</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
-                Connect with <span className="text-lytix-teal-dark">Lytix Biopharma</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
+                Connect with <span className="text-lytix-teal">Lytix Biopharma</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Have questions about our science, pipeline, or partnership opportunities?
@@ -154,8 +154,8 @@ export default function ContactPage() {
               {/* Left Column - Info */}
               <div className="lg:col-span-5 space-y-12">
                 <div>
-                  <h2 className="text-4xl font-bold tracking-tight text-lytix-navy mb-6">
-                    How we can <span className="gradient-text">help</span>
+                  <h2 className="text-4xl font-bold tracking-tight text-[#40525C] mb-6">
+                    How we can help
                   </h2>
                   <p className="text-lg text-lytix-navy/60 font-light leading-relaxed">
                     Whether you&apos;re interested in our science, exploring partnership opportunities,

@@ -28,8 +28,8 @@ export default function HomePage() {
             {/* Hero Content - Staggered animations */}
             <div className="space-y-8">
 
-              <h1 className="animate-fade-up opacity-0 stagger-1 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-lytix-navy drop-shadow-sm">
-                Oncolytic Molecules that Kill Cancer & Prevent Recurrence
+              <h1 className="animate-fade-up opacity-0 stagger-1 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#40525C] drop-shadow-sm">
+                Oncolytic Molecules that Kill Cancer with Direct & Abscopal Tumor Effects
               </h1>
 
               <p className="animate-fade-up opacity-0 stagger-2 text-xl md:text-2xl text-lytix-navy/80 leading-relaxed max-w-xl">
@@ -74,16 +74,16 @@ export default function HomePage() {
                 <span>Our Mission</span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
-                Lytix Biopharma is Redefining the Standard of Care in the <span className="text-lytix-teal-dark">Neoadjuvant Setting</span>
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight text-[#40525C]">
+                Lytix Biopharma is Redefining the Standard of Care in the Neoadjuvant Setting
               </h2>
 
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
-                Lytix Biopharma is developing a pipeline of oncolytic molecule therapies that treat both superficial and deep-seated tumors. Our focus is to re-define the standard of care in the neoadjuvant setting, through providing patients with first-in-class, first-line immunotherapies that kill cancer and prevent recurrence.
+                Lytix Biopharma is developing a pipeline of oncolytic molecule therapies that treat both superficial and deep-seated tumors. Our focus is to re-define the standard of care in the neoadjuvant (pre-surgery) setting, through providing patients with first-in-class, first-line immunotherapies that kill cancer with direct and abscopal tumor effects.
               </p>
 
               <p className="text-lg text-lytix-navy/70 leading-relaxed">
-                Our mission is to deliver transformative medicines that work in synergy with immune checkpoint inhibitors, to offer patients the best outcomes as fast as possible.
+                Our mission is to deliver transformative medicines that work in synergy with immune checkpoint inhibitors, to offer patients the best outcomes in the pre-surgical setting with a full immune system intact.
               </p>
 
 
@@ -103,7 +103,7 @@ export default function HomePage() {
                 <span>Our Science</span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight text-[#40525C]">
                 Our Oncolytic Molecule Drugs Overcome Immunosuppression Within the Tumor Microenvironment
               </h2>
 
@@ -144,8 +144,8 @@ export default function HomePage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-fade-up stagger-1">
 
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight text-lytix-navy">
-              Our Partner-ready Pipeline is Led by <span className="gradient-text">Ruxotemitide</span>, Rapidly Approaching Commercialization
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight text-[#40525C]">
+              Our Pipeline is Led by Ruxotemitide, Rapidly Approaching Pivotal Studies
             </h2>
           </div>
 
@@ -190,7 +190,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="text-center">
-                      <span className="badge-shine inline-flex items-center px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral font-semibold text-xs border border-lytix-coral/20">
+                      <span className="badge-shine inline-flex items-center justify-center px-3 py-1.5 rounded-full bg-lytix-coral/10 text-lytix-coral font-semibold text-xs border border-lytix-coral/20 text-center">
                         Seeking Partners
                       </span>
                     </div>

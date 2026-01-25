@@ -33,8 +33,7 @@ export default function PartnershipsPage() {
                 Partner with <span className="text-lytix-teal-dark">Lytix Biopharma</span>
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed mb-10">
-                We are open to discussions on co-development and outlicensing opportunities.
-                Our partner-ready pipeline offers multiple collaboration possibilities.
+                We are open to discussions on co-development and out-licensing opportunities for ruxotemitide in multiple oncology indications and LTX-401 globally.
               </p>
               <a
                 href="mailto:bd@lytixbiopharma.com"
@@ -64,8 +63,8 @@ export default function PartnershipsPage() {
                     <p className="text-sm text-emerald-100/80">Nasdaq Listed</p>
                   </div>
                   <div className="md:col-span-2 p-10">
-                    <div className="text-[10px] font-black uppercase tracking-widest text-lytix-navy/40 mb-3">Dermatological Indications License</div>
-                    <h4 className="text-xl font-bold text-lytix-navy mb-4">Ruxotemitide (LTX-315)</h4>
+                    <div className="text-[10px] font-black uppercase tracking-widest text-lytix-navy/40 mb-3">Dermatology Indications Only</div>
+                    <h4 className="text-xl font-bold text-lytix-navy mb-4">Ruxotemitide (LTX-315, VP-315)</h4>
                     <p className="text-lytix-navy/60 font-light leading-relaxed mb-6">
                       Verrica Pharmaceuticals&apos; license covers dermatological indications,
                       including basal cell carcinoma and squamous cell carcinoma. Verrica has generated

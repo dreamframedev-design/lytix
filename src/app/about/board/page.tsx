@@ -1,28 +1,55 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 const boardMembers = [
   {
-    name: "Board Member 1",
-    title: "Chairman",
-    bio: "Extensive leadership experience in the pharmaceutical industry with a focus on strategic growth and corporate governance.",
+    name: "Eric Falcand",
+    title: "Chair",
+    image: "/images/headshots/Eric Falcand 2.jpg",
+    bio: [
+      "Eric Falcand is a pharmaceutical executive with over 37 years of international experience gained at pharma and biotech in business development, general management, and commercialization, primarily within the oncology sector. Lately he held senior leadership roles at Servier Group, including Vice President and Global Head of Business Development, where he orchestrated acquisitions such as Shire Oncology and Agios' oncology portfolio. Eric has served as CEO of NeoGenomics GmbH and currently advises Bain & Co and APAX Partners. He also holds board positions at Ontes Bio and Tetra Pharma, supporting innovation in oncology. Eric holds a Doctorate in Veterinary Medicine, a Master's in Industrial Pharmacy, and an MBA from EM Lyon, France.",
+    ],
   },
   {
-    name: "Board Member 2",
+    name: "Claus Andersson",
     title: "Non-Executive Director",
-    bio: "Deep expertise in healthcare investment banking and capital markets, supporting Lytix's financing strategy.",
+    image: "/images/headshots/Claus Andersson.jpg",
+    bio: [
+      "Claus Andersson is an experienced venture capital investor specializing in life sciences, with over 20 years of expertise in building and funding biotech and pharmaceutical companies. Currently he serves as General Partner at Sunstone Life Science Ventures. He has served on more than 20 international boards across companies from preclinical to commercial stages. Claus focuses on strategic investments, business development, and company growth, helping companies navigate fundraising, M&A, and public listings. His work is supported by an extensive global network in the life sciences sector, emphasizing value creation and successful transaction outcomes. Claus holds a master's degree in Civil Chemical Engineering & a PhD in Mathematical Statistics.",
+    ],
   },
   {
-    name: "Board Member 3",
+    name: "Julie Dehaene-Puype",
     title: "Non-Executive Director",
-    bio: "Senior executive experience in global pharmaceutical companies with expertise in commercial operations.",
+    image: "/images/headshots/Julie Dehaene-Puype.png",
+    bio: [
+      "Julie Dehaene-Puype is a pharmaceutical executive with over 25 years of international experience across the EU and Europe, holding leadership roles at Schering-Plough, MerckMSD, Takeda, and Mundipharma. She has successfully led large scale commercial organizations and held full P&L responsibility at country and regional levels, including as General Manager for Takeda in Switzerland and France, and most recently as Chief Commercial Officer for Europe/Canada at Mundipharma. There she also led the global commercial strategy for an infectious disease asset in the pre-launch phase. Julie has a strong track record of driving growth, leading transformations, and building high performing teams in multicultural environments.",
+    ],
   },
   {
-    name: "Board Member 4",
+    name: "Marie-Louise Fjällskog, MD, PhD",
     title: "Non-Executive Director",
-    bio: "Accomplished scientist and entrepreneur with expertise in translating scientific discoveries into commercial therapies.",
+    image: "/images/headshots/Marie-Louise_web.jpg",
+    bio: [
+      "Marie-Louise Fjällskog, MD, PhD, is a senior life science executive with over 25 years of experience in clinical oncology and drug development, primarily within immuno-oncology. She currently leads Fjällskog Oncotherapeutics LLC and serves on the boards of Rexira International AB and Faron Pharmaceuticals. Her prior roles include Chief Medical Officer at Sensei Biotherapeutics and Faron Pharmaceuticals. Marie-Louise holds a PhD in Oncology and is an Associate Professor (Docent) of Oncology affiliated with Uppsala University, Sweden.",
+    ],
+  },
+  {
+    name: "Brynjar Forbergskog",
+    title: "Non-Executive Director",
+    image: "/images/headshots/Brynjar Forbergskog.jpg",
+    bio: [
+      "Brynjar Forbergskog is an experienced executive and investor, currently serving as CEO of his privately owned investment company, Saturn Invest AS. He was previously CFO and later CEO of Torghatten ASA, where he oversaw the company's growth into one of the largest transport providers in the Nordic region with over 7,000 employees and NOK 11 billion in annual turnover. Brynjar also serves on the boards of several companies and has a background as an external auditor.",
+    ],
+  },
+  {
+    name: "Kjetil Hestdal, MD, PhD",
+    title: "Non-Executive Director",
+    image: "/images/headshots/Kjetil Hestdal_web.jpg",
+    bio: [
+      "Kjetil Hestdal, MD, PhD, is a senior life science executive with extensive leadership experience in biotech and pharma. He was previously CEO of Photocure ASA, a commercial-stage oncology company listed on the Oslo Stock Exchange and currently serves as CEO of Calico Oncology and Serca Pharmaceuticals. In addition, he provides consulting services to biotech, pharma, and medtech companies. Kjetil holds a PhD in Immunology.",
+    ],
   },
 ];
 
@@ -30,61 +57,62 @@ export default function BoardPage() {
   return (
     <div className="min-h-screen bg-lytix-light text-lytix-navy">
       <main className="relative z-[2]">
-        {/* Hero Section - Full Width Background */}
-        <header className="relative min-h-[60vh] flex items-center overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/images/lytix ribbon 3.webp"
-              alt="Lytix board"
-              fill
-              className="object-cover object-center"
-              priority
-              quality={90}
-            />
-            {/* White gradient overlay - left to right */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent" />
-          </div>
+        {/* Apple-style Hero Section */}
+        <header className="relative min-h-[50vh] flex items-center overflow-hidden bg-white">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-lytix-coral/5 via-white to-white" />
 
-          <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24 pb-16">
-            <div className="max-w-2xl">
+          <div className="container mx-auto px-4 lg:px-8 relative z-10 py-24">
+            <div className="max-w-3xl">
               <Link
                 href="/about"
-                className="inline-flex items-center text-lytix-teal hover:text-lytix-teal-dark mb-6 transition-colors font-bold text-sm"
+                className="inline-flex items-center text-lytix-teal hover:text-lytix-teal-dark mb-8 transition-all hover:-translate-x-1 font-semibold text-sm"
               >
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to About
+                About Us
               </Link>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
-                Board of <span className="text-lytix-coral">Directors</span>
+              <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8 text-[#40525C]">
+                Board of Directors
               </h1>
-              <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
-                Our Board of Directors provides strategic guidance and governance expertise,
-                ensuring Lytix Biopharma delivers on its mission to transform cancer treatment.
+              <p className="max-w-2xl text-2xl text-lytix-navy/60 font-light leading-relaxed">
+                Strategic governance and global expertise guiding Lytix toward clinical and commercial success.
               </p>
             </div>
           </div>
         </header>
 
-        {/* Board Grid */}
-        <section className="py-24 bg-white border-y border-lytix-ice">
+        {/* Premium Team Grid */}
+        <section className="py-32 bg-[#F9FAFB]">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
               {boardMembers.map((member, index) => (
-                <div key={index} className="group glass-card p-1 rounded-[2.5rem] glow-border">
-                  <div className="bg-white rounded-[2.2rem] overflow-hidden flex flex-col md:flex-row h-full">
-                    <div className="md:w-56 flex-shrink-0">
-                      <ImagePlaceholder
-                        description={`Professional headshot of ${member.name}`}
-                        aspectRatio="square"
-                        className="rounded-none border-0 h-full"
+                <div
+                  key={index}
+                  className="group relative flex flex-col p-8 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-lytix-ice/50 hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden"
+                >
+                  <div className="absolute -right-20 -top-20 w-80 h-80 bg-lytix-coral/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+
+                  <div className="flex flex-col lg:flex-row gap-8 items-start mb-8">
+                    <div className="relative w-32 h-32 lg:w-48 lg:h-48 overflow-hidden rounded-3xl shadow-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-500 bg-lytix-light">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover object-top filter grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                       />
                     </div>
-                    <div className="p-8 flex flex-col justify-center">
-                      <h3 className="text-xl font-bold text-lytix-navy mb-1">{member.name}</h3>
-                      <p className="text-lytix-coral font-semibold mb-4 text-sm">{member.title}</p>
-                      <p className="text-lytix-navy/60 font-light leading-relaxed text-sm">{member.bio}</p>
+                    <div>
+                      <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-3 block">Board Member</span>
+                      <h2 className="text-2xl font-bold text-[#40525C] mb-1">{member.name}</h2>
+                      <p className="text-lytix-coral font-semibold text-sm uppercase tracking-wider">{member.title}</p>
                     </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    {member.bio.map((paragraph, pIndex) => (
+                      <p key={pIndex} className="text-base text-lytix-navy/70 leading-relaxed font-light">
+                        {paragraph}
+                      </p>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -93,30 +121,33 @@ export default function BoardPage() {
         </section>
       </main>
 
-      {/* CTA Section - Outside main for ribbon visibility */}
-      <section className="py-16 bg-lytix-light">
+      {/* Modern CTA */}
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-5xl mx-auto p-8 bg-white rounded-3xl border border-lytix-ice">
-            <div>
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-navy/40 mb-2 block">Explore More</span>
-              <h2 className="text-2xl font-bold text-lytix-navy mb-2">Explore Our Leadership</h2>
-              <p className="text-lytix-navy/60 font-light">Learn more about our Management Team and Clinical Advisory Board.</p>
-            </div>
-            <div className="flex gap-4 flex-wrap">
-              <Link
-                href="/about/management"
-                className="px-6 py-3 bg-lytix-teal/10 text-lytix-teal rounded-xl font-bold text-sm hover:bg-lytix-teal hover:text-white transition-all flex items-center gap-2"
-              >
-                Management Team
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="/about/clinical-advisory"
-                className="px-6 py-3 bg-lytix-coral text-white rounded-xl font-bold text-sm hover:bg-lytix-raspberry transition-all flex items-center gap-2"
-              >
-                Clinical Advisory
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+          <div className="bg-lytix-navy relative rounded-[3rem] p-12 lg:p-20 overflow-hidden shadow-2xl">
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-lytix-teal/10 to-transparent pointer-events-none" />
+
+            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+              <div className="max-w-xl text-center lg:text-left">
+                <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">Redefining Oncology</h2>
+                <p className="text-xl text-lytix-ice/60 font-light">
+                  Explore our leadership team and scientific advisors.
+                </p>
+              </div>
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link
+                  href="/about/management"
+                  className="px-8 py-4 bg-white text-lytix-navy rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-lytix-ice hover:scale-105 transition-all shadow-xl"
+                >
+                  Management Team
+                </Link>
+                <Link
+                  href="/about/clinical-advisory"
+                  className="px-8 py-4 border-2 border-white/20 text-white rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white/10 transition-all"
+                >
+                  Advisory Board
+                </Link>
+              </div>
             </div>
           </div>
         </div>

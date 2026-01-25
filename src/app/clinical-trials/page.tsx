@@ -29,8 +29,8 @@ export default function ClinicalTrialsPage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Clinical Trials</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
-                Clinical <span className="text-lytix-teal-dark">Trials</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
+                Clinical Trials
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Lytix Biopharma has completed multiple Phase 2 trials demonstrating the safety and efficacy
@@ -68,7 +68,7 @@ export default function ClinicalTrialsPage() {
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center mb-12">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Active Recruitment</span>
-              <h2 className="text-4xl font-bold tracking-tight text-lytix-navy">Current Studies</h2>
+              <h2 className="text-4xl font-bold tracking-tight text-[#40525C]">Current Studies</h2>
             </div>
 
             <div className="glass-card p-2 rounded-[3rem] glow-border max-w-5xl mx-auto mb-12">

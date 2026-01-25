@@ -29,8 +29,8 @@ export default function PatientResourcesPage() {
                 <span className="text-lytix-ice">/</span>
                 <span>For Patients</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
-                Patient <span className="text-lytix-teal-dark">Resources</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
+                Patient Resources
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 We are committed to supporting patients throughout their treatment journey.
@@ -45,7 +45,7 @@ export default function PatientResourcesPage() {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center mb-16">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Information & Support</span>
-              <h2 className="text-4xl font-bold tracking-tight text-lytix-navy">How We Can Help</h2>
+              <h2 className="text-4xl font-bold tracking-tight text-[#40525C]">How We Can Help</h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -126,7 +126,7 @@ export default function PatientResourcesPage() {
 
             <div className="order-1 lg:order-2">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-4 block">Our Commitment</span>
-              <h2 className="text-4xl font-bold tracking-tight text-lytix-navy mb-6">
+              <h2 className="text-4xl font-bold tracking-tight text-[#40525C]">
                 Patients at the Heart of Everything
               </h2>
               <p className="text-lg text-lytix-navy/60 font-light leading-relaxed mb-10">

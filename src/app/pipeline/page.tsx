@@ -97,7 +97,7 @@ export default function PipelinePage() {
 
   return (
     <div className="bg-lytix-light">
-      <div className="pt-24 relative z-[2]">
+      <div className="relative z-[2]">
         {/* Hero Section - Full Width Background */}
         <header className="relative min-h-[60vh] flex items-center overflow-hidden">
           {/* Background Image */}
@@ -121,8 +121,8 @@ export default function PipelinePage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Pipeline</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
-                Partner-ready <span className="text-lytix-teal-dark">Pipeline</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
+                Pipeline
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Lytix holds an extensive patent estate protecting its proprietary anti-tumor molecules
@@ -202,7 +202,7 @@ export default function PipelinePage() {
                     <span>Phase II</span>
                     <span>Phase III</span>
                   </div>
-                  <div>Partner / Status</div>
+                  <div className="text-center">Partner / Status</div>
                 </div>
 
                 {/* Ruxotemitide Section Header */}
@@ -386,15 +386,15 @@ function PipelineRow({
         </div>
 
         {/* Partner / Status */}
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center justify-center gap-2 flex-wrap">
           {item.partner && (
-            <span className="badge-shine px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal-dark text-xs font-bold border border-lytix-teal/20">
+            <span className="badge-shine inline-flex items-center justify-center px-3 py-1.5 rounded-full bg-lytix-teal/10 text-lytix-teal-dark text-xs font-bold border border-lytix-teal/20 text-center">
               {item.partner.name}
             </span>
           )}
           {item.status && (
             <span className={cn(
-              "badge-shine px-3 py-1.5 rounded-full text-xs font-semibold border",
+              "badge-shine inline-flex items-center justify-center px-3 py-1.5 rounded-full text-xs font-semibold border text-center",
               item.statusType === "seeking" && "bg-lytix-coral/10 text-lytix-coral border-lytix-coral/20",
               item.statusType === "recruiting" && "bg-lytix-cyan/10 text-lytix-navy-deep border-lytix-cyan/30",
               item.statusType === "preparing" && "bg-lytix-gold/10 text-lytix-navy border-lytix-gold/30"

@@ -52,7 +52,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-lytix-ice/60 leading-relaxed mb-8 font-light">
-              Oncolytic Molecules that Kill Cancer & Prevent Recurrence
+              Oncolytic Molecules that Kill Cancer with Direct & Abscopal Tumor Effects
             </p>
 
             {/* Location Badge */}

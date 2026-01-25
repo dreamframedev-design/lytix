@@ -71,8 +71,8 @@ export default function SciencePage() {
                 <span className="text-lytix-ice">/</span>
                 <span>Our Science</span>
               </nav>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-lytix-navy">
-                Our <span className="text-lytix-teal-dark">Science</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
+                Our Science
               </h1>
               <p className="max-w-xl text-xl text-lytix-navy/70 font-light leading-relaxed">
                 Lytix Biopharma has developed a groundbreaking oncolytic molecule platform that overcomes
@@ -88,7 +88,7 @@ export default function SciencePage() {
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-4 block">The Challenge</span>
-              <h2 className="text-4xl font-bold tracking-tight mb-6 text-lytix-navy">
+              <h2 className="text-4xl font-bold tracking-tight mb-6 text-[#40525C]">
                 Most Patients Won&apos;t Respond to Immune Checkpoint Inhibitors
               </h2>
               <p className="text-lg text-lytix-navy/60 font-light">
@@ -120,7 +120,7 @@ export default function SciencePage() {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-4 block">Our Solution</span>
-            <h2 className="text-4xl font-bold tracking-tight mb-6 text-lytix-navy">
+            <h2 className="text-4xl font-bold tracking-tight mb-6 text-[#40525C]">
               Our Oncolytic Molecule Therapies Address These Limitations
             </h2>
             <p className="text-lg text-lytix-navy/60 font-light">
@@ -153,7 +153,7 @@ export default function SciencePage() {
                 <div className="w-2 h-2 rounded-full bg-lytix-gold" />
                 <span>Mechanism of Action</span>
               </span>
-              <h2 className="text-4xl font-bold tracking-tight mb-6 text-lytix-navy">
+              <h2 className="text-4xl font-bold tracking-tight mb-6 text-[#40525C]">
                 Our Unique Two-Step Mode of Action
               </h2>
               <p className="text-lg text-lytix-navy/60 font-light">

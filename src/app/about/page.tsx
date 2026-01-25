@@ -62,7 +62,7 @@ export default function AboutPage() {
               src="/images/ribbon hero 2 homepage.webp"
               alt="Lytix Biopharma"
               fill
-              className="object-cover object-center"
+              className="object-cover object-center scale-x-[-1]"
               priority
               quality={90}
             />

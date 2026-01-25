@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lytix Biopharma | Oncolytic Immunotherapy",
   description:
-    "Lytix Biopharma is developing first-in-class oncolytic molecule therapies that kill cancer and prevent recurrence. Redefining the standard of care in the neoadjuvant setting.",
+    "Lytix Biopharma is developing first-in-class oncolytic molecule therapies that kill cancer with direct and abscopal tumor effects. Redefining the standard of care in the neoadjuvant setting.",
   keywords: [
     "oncology",
     "immunotherapy",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lytix Biopharma | Oncolytic Immunotherapy",
     description:
-      "Developing first-in-class oncolytic molecule therapies that kill cancer and prevent recurrence.",
+      "Developing first-in-class oncolytic molecule therapies that kill cancer with direct and abscopal tumor effects.",
     type: "website",
     locale: "en_US",
     siteName: "Lytix Biopharma",
