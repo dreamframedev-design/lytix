@@ -52,7 +52,7 @@ export default function ClinicalAdvisoryPage() {
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 About Us
               </Link>
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8 text-[#40525C]">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
                 Advisory Board
               </h1>
               <p className="max-w-2xl text-2xl text-lytix-navy/60 font-light leading-relaxed">
@@ -65,15 +65,15 @@ export default function ClinicalAdvisoryPage() {
         {/* Premium Team Grid */}
         <section className="py-32 bg-[#F9FAFB]">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid grid-cols-1 gap-24">
+            <div className="grid grid-cols-1 gap-12 lg:gap-24">
               {advisoryBoard.map((member, index) => (
                 <div
                   key={index}
-                  className="group relative grid lg:grid-cols-[400px_1fr] gap-12 items-center p-8 lg:p-12 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-lytix-ice/50 hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden"
+                  className="group relative grid lg:grid-cols-[400px_1fr] gap-12 items-start p-8 lg:p-12 bg-white rounded-[2.5rem] shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-lytix-ice/50 hover:shadow-[0_20px_50px_rgb(0,0,0,0.06)] transition-all duration-500 overflow-hidden"
                 >
                   <div className="absolute -right-20 -top-20 w-80 h-80 bg-lytix-gold/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
-                  <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 bg-lytix-light">
+                  <div className="relative aspect-[4/5] lg:aspect-square overflow-hidden rounded-[2rem] shadow-2xl group-hover:scale-[1.02] transition-transform duration-500 bg-lytix-light">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -82,7 +82,7 @@ export default function ClinicalAdvisoryPage() {
                     />
                   </div>
 
-                  <div className="flex flex-col relative z-10">
+                  <div className="flex flex-col h-full relative z-10">
                     <div className="mb-8">
                       <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-gold mb-3 block">Scientific Advisory</span>
                       <h2 className="text-3xl lg:text-4xl font-bold text-[#40525C] mb-2">{member.name}</h2>

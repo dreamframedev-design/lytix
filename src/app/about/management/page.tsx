@@ -77,7 +77,7 @@ export default function ManagementPage() {
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 About Us
               </Link>
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8 text-[#40525C]">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 text-[#40525C]">
                 Management Team
               </h1>
               <p className="max-w-2xl text-2xl text-lytix-navy/60 font-light leading-relaxed">
