@@ -342,7 +342,7 @@ export default function HomePage() {
                   <h4 className="font-semibold text-lg text-lytix-navy">Current Partnership</h4>
                 </div>
                 <p className="text-lytix-navy/70 mb-4">
-                  <strong className="text-lytix-teal-dark">Verrica Pharmaceuticals</strong> - Currently assessing ruxotemitide (VP-315) in a Phase 2 study in basal cell carcinoma.
+                  Verrica Pharmaceuticals (in dermatology indications only). Currently assessing ruxotemitide (LTX-315, VP-315) in a Phase 2 study in basal cell carcinoma.
                 </p>
                 <a
                   href="https://newsweb.oslobors.no/message/659147"

@@ -63,7 +63,7 @@ export default function PartnershipsPage() {
                     <p className="text-sm text-emerald-100/80">Nasdaq Listed</p>
                   </div>
                   <div className="md:col-span-2 p-10">
-                    <div className="text-[10px] font-black uppercase tracking-widest text-lytix-navy/40 mb-3">Dermatology Indications Only</div>
+                    <div className="text-xs font-black uppercase tracking-widest text-lytix-coral mb-3">Dermatology Indications Only</div>
                     <h4 className="text-xl font-bold text-lytix-navy mb-4">Ruxotemitide (LTX-315, VP-315)</h4>
                     <p className="text-lytix-navy/60 font-light leading-relaxed mb-6">
                       Verrica Pharmaceuticals&apos; license covers dermatological indications,
