@@ -11,7 +11,7 @@ export default function PartnershipsPage() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/images/homepage hero1.webp"
+              src="/images/parternships.webp"
               alt="Lytix partnership opportunities"
               fill
               className="object-cover object-center"

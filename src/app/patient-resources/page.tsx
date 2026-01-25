@@ -115,7 +115,7 @@ export default function PatientResourcesPage() {
             <div className="order-2 lg:order-1 relative">
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl shadow-lytix-teal/20">
                 <Image
-                  src="/images/doctor hero.webp"
+                  src="/images/patient hero.webp"
                   alt="Patient support"
                   fill
                   className="object-cover"
