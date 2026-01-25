@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section - Full screen background image */}
-      <section className="relative min-h-screen flex items-center overflow-hidden z-[2]">
+      <section className="relative min-h-screen flex items-center overflow-hidden z-[2] bg-white">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
