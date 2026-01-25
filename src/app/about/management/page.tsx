@@ -8,7 +8,8 @@ const managementTeam = [
     title: "CEO",
     image: "/images/headshots/Øystein Rekdal.jpg",
     bio: [
-      "Dr. Rekdal is Co-founder of and served as CEO during the first 4 years of Lytix Biopharma's formation. After that he served as CSO and Head of R&D before he again was promoted to the position of CEO in 2018. Rekdal's research background is within tumor immunology and his field of expertise is anticancer molecules derived from host defense peptides. Dr. Rekdal commenced his PhD on cytolysis and tumor immunology in 1990, and his postdoctoral work forms the basis of Lytix Biopharma's technology peptide platform.",
+      "Dr. Rekdal is Co-founder of and served as CEO during the first 4 years of Lytix Biopharma's formation.",
+      "After that he served as CSO and Head of R&D before he again was promoted to the position of CEO in 2018. Rekdal's research background is within tumor immunology and his field of expertise is anticancer molecules derived from host defense peptides. Dr. Rekdal commenced his PhD on cytolysis and tumor immunology in 1990, and his postdoctoral work forms the basis of Lytix Biopharma's technology peptide platform.",
       "Dr. Rekdal has been instrumental in establishing collaborations with several distinguished researchers and institutions and is regularly invited to give plenary lectures at international oncology, industry and partnering conferences.",
     ],
   },
@@ -36,7 +37,8 @@ const managementTeam = [
     image: "/images/headshots/Mette (1).jpg",
     bio: [
       "Dr. Mette Husbyn brings over 16 years of experience at GE Healthcare, where she held various scientific and managerial roles covering all aspects of CMC, from pre-clinical and early clinical phases to commercial products.",
-      "Following her tenure at GE, Dr. Husbyn served as Head of CMC at Lytix Biopharma from 2012 to 2017, where she oversaw all CMC activities and established robust processes to enhance drug development. Most recently she held the position of Head of CMC and CTO at Xylonix Therapeutics, leading a team of 22 professionals focused on strategic partner selection, process development, and regulatory interactions across the UK and Europe.",
+      "Following her tenure at GE, Dr. Husbyn served as Head of CMC at Lytix Biopharma from 2012 to 2017, where she oversaw all CMC activities and established robust processes to enhance drug development.",
+      "Most recently she held the position of Head of CMC and CTO at Xylonix Therapeutics, leading a team of 22 professionals focused on strategic partner selection, process development, and regulatory interactions across the UK and Europe.",
       "Dr. Husbyn earned her doctorate from the Medical Faculty of the University of Oslo in 2003, specializing in peptide chemistry.",
     ],
   },
@@ -115,7 +117,7 @@ export default function ManagementPage() {
                       <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-teal mb-3 block">Executive Leadership</span>
                       <h2 className="text-3xl lg:text-4xl font-bold text-[#40525C] mb-2">{member.name}</h2>
                       <div className="h-1 w-12 bg-lytix-teal rounded-full mb-4" />
-                      <p className="text-lg lg:text-xl font-medium text-lytix-teal-dark">{member.title}</p>
+                      <p className="text-xl lg:text-2xl font-medium text-lytix-teal-dark">{member.title}</p>
                     </div>
 
                     <div className="space-y-6">

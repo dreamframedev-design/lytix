@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const boardMembers = [
   {
     name: "Eric Falcand",
-    title: "Chair",
+    title: "Chairman of the Board",
     image: "/images/headshots/Eric Falcand 2.jpg",
     bio: [
       "Eric Falcand is a pharmaceutical executive with over 37 years of international experience gained at pharma and biotech in business development, general management, and commercialization, primarily within the oncology sector. Lately he held senior leadership roles at Servier Group, including Vice President and Global Head of Business Development, where he orchestrated acquisitions such as Shire Oncology and Agios' oncology portfolio. Eric has served as CEO of NeoGenomics GmbH and currently advises Bain & Co and APAX Partners. He also holds board positions at Ontes Bio and Tetra Pharma, supporting innovation in oncology. Eric holds a Doctorate in Veterinary Medicine, a Master's in Industrial Pharmacy, and an MBA from EM Lyon, France.",
@@ -13,7 +13,7 @@ const boardMembers = [
   },
   {
     name: "Claus Andersson",
-    title: "Non-Executive Director",
+    title: "",
     image: "/images/headshots/Claus Andersson.jpg",
     bio: [
       "Claus Andersson is an experienced venture capital investor specializing in life sciences, with over 20 years of expertise in building and funding biotech and pharmaceutical companies. Currently he serves as General Partner at Sunstone Life Science Ventures. He has served on more than 20 international boards across companies from preclinical to commercial stages. Claus focuses on strategic investments, business development, and company growth, helping companies navigate fundraising, M&A, and public listings. His work is supported by an extensive global network in the life sciences sector, emphasizing value creation and successful transaction outcomes. Claus holds a master's degree in Civil Chemical Engineering & a PhD in Mathematical Statistics.",
@@ -21,7 +21,7 @@ const boardMembers = [
   },
   {
     name: "Julie Dehaene-Puype",
-    title: "Non-Executive Director",
+    title: "",
     image: "/images/headshots/Julie Dehaene-Puype.png",
     bio: [
       "Julie Dehaene-Puype is a pharmaceutical executive with over 25 years of international experience across the EU and Europe, holding leadership roles at Schering-Plough, MerckMSD, Takeda, and Mundipharma. She has successfully led large scale commercial organizations and held full P&L responsibility at country and regional levels, including as General Manager for Takeda in Switzerland and France, and most recently as Chief Commercial Officer for Europe/Canada at Mundipharma. There she also led the global commercial strategy for an infectious disease asset in the pre-launch phase. Julie has a strong track record of driving growth, leading transformations, and building high performing teams in multicultural environments.",
@@ -29,7 +29,7 @@ const boardMembers = [
   },
   {
     name: "Marie-Louise Fjällskog, MD, PhD",
-    title: "Non-Executive Director",
+    title: "",
     image: "/images/headshots/Marie-Louise_web.jpg",
     bio: [
       "Marie-Louise Fjällskog, MD, PhD, is a senior life science executive with over 25 years of experience in clinical oncology and drug development, primarily within immuno-oncology. She currently leads Fjällskog Oncotherapeutics LLC and serves on the boards of Rexira International AB and Faron Pharmaceuticals. Her prior roles include Chief Medical Officer at Sensei Biotherapeutics and Faron Pharmaceuticals. Marie-Louise holds a PhD in Oncology and is an Associate Professor (Docent) of Oncology affiliated with Uppsala University, Sweden.",
@@ -37,7 +37,7 @@ const boardMembers = [
   },
   {
     name: "Brynjar Forbergskog",
-    title: "Non-Executive Director",
+    title: "",
     image: "/images/headshots/Brynjar Forbergskog.jpg",
     bio: [
       "Brynjar Forbergskog is an experienced executive and investor, currently serving as CEO of his privately owned investment company, Saturn Invest AS. He was previously CFO and later CEO of Torghatten ASA, where he oversaw the company's growth into one of the largest transport providers in the Nordic region with over 7,000 employees and NOK 11 billion in annual turnover. Brynjar also serves on the boards of several companies and has a background as an external auditor.",
@@ -45,7 +45,7 @@ const boardMembers = [
   },
   {
     name: "Kjetil Hestdal, MD, PhD",
-    title: "Non-Executive Director",
+    title: "",
     image: "/images/headshots/Kjetil Hestdal_web.jpg",
     bio: [
       "Kjetil Hestdal, MD, PhD, is a senior life science executive with extensive leadership experience in biotech and pharma. He was previously CEO of Photocure ASA, a commercial-stage oncology company listed on the Oslo Stock Exchange and currently serves as CEO of Calico Oncology and Serca Pharmaceuticals. In addition, he provides consulting services to biotech, pharma, and medtech companies. Kjetil holds a PhD in Immunology.",
@@ -102,10 +102,14 @@ export default function BoardPage() {
 
                   <div className="flex flex-col h-full relative z-10">
                     <div className="mb-8">
-                      <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-3 block">Board Member</span>
+                      <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-coral mb-3 block">
+                        {member.name === "Eric Falcand" ? "Chairman of the Board" : "Board Member"}
+                      </span>
                       <h2 className="text-3xl lg:text-4xl font-bold text-[#40525C] mb-2">{member.name}</h2>
                       <div className="h-1 w-12 bg-lytix-coral rounded-full mb-4" />
-                      <p className="text-lg lg:text-xl font-medium text-lytix-coral-dark">{member.title}</p>
+                      {member.title && (
+                        <p className="text-xl lg:text-2xl font-medium text-lytix-coral-dark">{member.title}</p>
+                      )}
                     </div>
 
                     <div className="space-y-6">

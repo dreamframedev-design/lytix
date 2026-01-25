@@ -87,7 +87,7 @@ export default function ClinicalAdvisoryPage() {
                       <span className="text-[10px] font-black uppercase tracking-[0.3em] text-lytix-gold mb-3 block">Scientific Advisory</span>
                       <h2 className="text-3xl lg:text-4xl font-bold text-[#40525C] mb-2">{member.name}</h2>
                       <div className="h-1 w-12 bg-lytix-gold rounded-full mb-4" />
-                      <p className="text-lg lg:text-xl font-medium text-lytix-navy/60">{member.title}</p>
+                      <p className="text-xl lg:text-2xl font-medium text-lytix-navy/60">{member.title}</p>
                     </div>
 
                     <div className="space-y-6">
